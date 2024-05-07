@@ -16,9 +16,13 @@
 		70390EFA2BE8ED5000D4601E /* CoreMLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70390EF92BE8ED5000D4601E /* CoreMLViewController.swift */; };
 		70390F0C2BE922DA00D4601E /* Detection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70390F0B2BE922DA00D4601E /* Detection.swift */; };
 		70CD51312BEA4A66008AC881 /* yolov8n.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 70CD51302BEA4A66008AC881 /* yolov8n.mlpackage */; };
+		70CD51332BEA50C3008AC881 /* yolov8n.onnx in Resources */ = {isa = PBXBuildFile; fileRef = 70CD51322BEA50C3008AC881 /* yolov8n.onnx */; };
+		857EA3BB8717C26634A660D9 /* Pods_CoreMLTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F39FE945C9559AEFA1F367F /* Pods_CoreMLTesting.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F39FE945C9559AEFA1F367F /* Pods_CoreMLTesting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreMLTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6599EBBDA9242F68CF701B82 /* Pods-CoreMLTesting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreMLTesting.debug.xcconfig"; path = "Target Support Files/Pods-CoreMLTesting/Pods-CoreMLTesting.debug.xcconfig"; sourceTree = "<group>"; };
 		70390EE02BE8C48200D4601E /* CoreMLTesting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreMLTesting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70390EE32BE8C48200D4601E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		70390EE52BE8C48200D4601E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +34,8 @@
 		70390EF92BE8ED5000D4601E /* CoreMLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLViewController.swift; sourceTree = "<group>"; };
 		70390F0B2BE922DA00D4601E /* Detection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detection.swift; sourceTree = "<group>"; };
 		70CD51302BEA4A66008AC881 /* yolov8n.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = yolov8n.mlpackage; sourceTree = SOURCE_ROOT; };
+		70CD51322BEA50C3008AC881 /* yolov8n.onnx */ = {isa = PBXFileReference; lastKnownFileType = file; path = yolov8n.onnx; sourceTree = SOURCE_ROOT; };
+		8AB5FF3417A91D02BD83C2E9 /* Pods-CoreMLTesting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreMLTesting.release.xcconfig"; path = "Target Support Files/Pods-CoreMLTesting/Pods-CoreMLTesting.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				857EA3BB8717C26634A660D9 /* Pods_CoreMLTesting.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +55,8 @@
 			children = (
 				70390EE22BE8C48200D4601E /* CoreMLTesting */,
 				70390EE12BE8C48200D4601E /* Products */,
+				AEEF6FBAB23B81CD20431635 /* Pods */,
+				9A796A3F63939DBCEE9F744A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				70CD51302BEA4A66008AC881 /* yolov8n.mlpackage */,
+				70CD51322BEA50C3008AC881 /* yolov8n.onnx */,
 				70390EE32BE8C48200D4601E /* AppDelegate.swift */,
 				70390EE52BE8C48200D4601E /* SceneDelegate.swift */,
 				70390EE72BE8C48200D4601E /* ViewController.swift */,
@@ -76,6 +86,23 @@
 			path = CoreMLTesting;
 			sourceTree = "<group>";
 		};
+		9A796A3F63939DBCEE9F744A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F39FE945C9559AEFA1F367F /* Pods_CoreMLTesting.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AEEF6FBAB23B81CD20431635 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6599EBBDA9242F68CF701B82 /* Pods-CoreMLTesting.debug.xcconfig */,
+				8AB5FF3417A91D02BD83C2E9 /* Pods-CoreMLTesting.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +110,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70390EF42BE8C48500D4601E /* Build configuration list for PBXNativeTarget "CoreMLTesting" */;
 			buildPhases = (
+				30753AC565375D1319DC5936 /* [CP] Check Pods Manifest.lock */,
 				70390EDC2BE8C48200D4601E /* Sources */,
 				70390EDD2BE8C48200D4601E /* Frameworks */,
 				70390EDE2BE8C48200D4601E /* Resources */,
@@ -134,6 +162,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70CD51332BEA50C3008AC881 /* yolov8n.onnx in Resources */,
 				70390EF02BE8C48500D4601E /* LaunchScreen.storyboard in Resources */,
 				70390EED2BE8C48500D4601E /* Assets.xcassets in Resources */,
 				70390EEB2BE8C48200D4601E /* Main.storyboard in Resources */,
@@ -141,6 +170,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30753AC565375D1319DC5936 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoreMLTesting-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		70390EDC2BE8C48200D4601E /* Sources */ = {
@@ -299,6 +353,7 @@
 		};
 		70390EF52BE8C48500D4601E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6599EBBDA9242F68CF701B82 /* Pods-CoreMLTesting.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -327,6 +382,7 @@
 		};
 		70390EF62BE8C48500D4601E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AB5FF3417A91D02BD83C2E9 /* Pods-CoreMLTesting.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
