@@ -69,16 +69,13 @@ final class CoreMLViewController: UIViewController {
         let videoDataOutputQueue = DispatchQueue(label: "VideoDataOutput", qos: .userInitiated, attributes: [], autoreleaseFrequency: .workItem)
         if captureSession.canAddOutput(videoDataOutput) {
             captureSession.addOutput(videoDataOutput)
-//            if let videoConnection = videoDataOutput.connection(with: .video) {
-//                if videoConnection.isVideoRotationAngleSupported(0) {
-//                    videoConnection.videoRotationAngle = 0
-//                }
-//            }
             videoDataOutput.alwaysDiscardsLateVideoFrames = true
             videoDataOutput.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: Int(kCVPixelFormatType_420YpCbCr8BiPlanarFullRange)]
             videoDataOutput.setSampleBufferDelegate(self, queue: videoDataOutputQueue)
-            if let captureConnection = videoDataOutput.connection(with: .video), captureConnection.isVideoRotationAngleSupported(90) {
-                captureConnection.videoRotationAngle = 90
+            if let captureConnection = videoDataOutput.connection(with: .video) {
+                if captureConnection.isVideoRotationAngleSupported(90) {
+                    captureConnection.videoRotationAngle = 90
+                }
                 captureConnection.isEnabled = true
             }
         }
@@ -86,16 +83,13 @@ final class CoreMLViewController: UIViewController {
     }
     
     private func setupPreview() {
-//        previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         previewLayer.videoGravity = .resizeAspectFill
         previewLayer.connection?.videoRotationAngle = 90
         let captureViewLayer = captureView.layer
         previewLayer.frame = captureViewLayer.bounds
         captureViewLayer.addSublayer(previewLayer)
         
-//        let detectionLayer =
         detectionLayer.bounds = .init(origin: .zero, size: .init(width: videoSize.height, height: videoSize.width))
-//        detectionLayer.position = .init(x: captureViewLayer.bounds.midX, y: captureViewLayer.bounds.midY)
         captureViewLayer.addSublayer(detectionLayer)
         
         let xScale = captureViewLayer.bounds.size.width / videoSize.height
@@ -103,10 +97,6 @@ final class CoreMLViewController: UIViewController {
         let scale = fmax(xScale, yScale)
         detectionLayer.setAffineTransform(CGAffineTransform(scaleX: scale, y: scale))
         detectionLayer.position = .init(x: captureViewLayer.bounds.midX, y: captureViewLayer.bounds.midY)
-
-        
-//        detectionLayer.borderColor = UIColor.red.cgColor
-//        detectionLayer.backgroundColor = UIColor.green.cgColor
     }
     
     private func setupVision() {
@@ -123,27 +113,33 @@ final class CoreMLViewController: UIViewController {
     private func process(vnObservations: [VNRecognizedObjectObservation]) {
         let peopleObservations = vnObservations.filter({
             $0.labels.first?.identifier as? String == "person" &&
-            $0.labels.first?.confidence as? Float ?? 0.0 > 0.8
+            $0.labels.first?.confidence as? Float ?? 0.0 > 0.9
         })
         var detections = [Detection]()
         for personObservation in peopleObservations {
             let flippedNormalizedDetectionBoundingBox = personObservation.boundingBox.flippedVertically
             let imageDetectionBoundingBox = VNImageRectForNormalizedRect(flippedNormalizedDetectionBoundingBox, Int(videoSize.height), Int(videoSize.width))
-            print(imageDetectionBoundingBox)
-            let detection = Detection(label: personObservation.labels[0].identifier, confidence: personObservation.confidence, boundingBox: imageDetectionBoundingBox)
+            let detection = Detection(label: personObservation.labels[0].identifier, confidence: personObservation.labels[0].confidence, boundingBox: imageDetectionBoundingBox)
             detections.append(detection)
-            print("\(personObservation.labels[0].identifier) \(personObservation.labels[0].confidence)")
         }
         
         DispatchQueue.main.async {
             self.detectionLayer.sublayers = nil
             for detection in detections {
                 let shapeLayer = CALayer()
-//                shapeLayer.backgroundColor = UIColor.green.cgColor
-                shapeLayer.borderWidth = 1
+                shapeLayer.borderWidth = 2
                 shapeLayer.borderColor = UIColor.red.cgColor
                 shapeLayer.frame = detection.boundingBox
+                
+                let textLayer = CATextLayer()
+                textLayer.foregroundColor = UIColor.red.cgColor
+                textLayer.font = UIFont.systemFont(ofSize: 12)
+                textLayer.fontSize = 12
+                textLayer.contentsScale = self.view.window?.windowScene?.screen.scale ?? 1.0
+                textLayer.string = String(format: "%.1f", detection.confidence * 100) + "%"
+                textLayer.frame = shapeLayer.frame
                 self.detectionLayer.addSublayer(shapeLayer)
+                self.detectionLayer.addSublayer(textLayer)
             }
         }
     }
@@ -165,10 +161,10 @@ extension CoreMLViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
         guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
             return
         }
-        let width = CVPixelBufferGetWidth(pixelBuffer)
-        let height = CVPixelBufferGetHeight(pixelBuffer)
-        let image = CIImage(cvImageBuffer: pixelBuffer)
-        let uiImage = UIImage(ciImage: image)
+//        let width = CVPixelBufferGetWidth(pixelBuffer)
+//        let height = CVPixelBufferGetHeight(pixelBuffer)
+//        let image = CIImage(cvImageBuffer: pixelBuffer)
+//        let uiImage = UIImage(ciImage: image)
         let imageRequestHandler = VNImageRequestHandler(cvPixelBuffer: pixelBuffer)
         do {
             try imageRequestHandler.perform([vnRequest])

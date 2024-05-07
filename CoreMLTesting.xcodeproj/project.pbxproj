@@ -14,8 +14,8 @@
 		70390EED2BE8C48500D4601E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70390EEC2BE8C48500D4601E /* Assets.xcassets */; };
 		70390EF02BE8C48500D4601E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70390EEE2BE8C48500D4601E /* LaunchScreen.storyboard */; };
 		70390EFA2BE8ED5000D4601E /* CoreMLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70390EF92BE8ED5000D4601E /* CoreMLViewController.swift */; };
-		70390F0A2BE91CDA00D4601E /* yolov8n.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 70390F092BE91CDA00D4601E /* yolov8n.mlpackage */; };
 		70390F0C2BE922DA00D4601E /* Detection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70390F0B2BE922DA00D4601E /* Detection.swift */; };
+		70CD51312BEA4A66008AC881 /* yolov8n.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 70CD51302BEA4A66008AC881 /* yolov8n.mlpackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		70390EEF2BE8C48500D4601E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70390EF12BE8C48500D4601E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70390EF92BE8ED5000D4601E /* CoreMLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLViewController.swift; sourceTree = "<group>"; };
-		70390F092BE91CDA00D4601E /* yolov8n.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = yolov8n.mlpackage; sourceTree = SOURCE_ROOT; };
 		70390F0B2BE922DA00D4601E /* Detection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detection.swift; sourceTree = "<group>"; };
+		70CD51302BEA4A66008AC881 /* yolov8n.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = yolov8n.mlpackage; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +62,7 @@
 		70390EE22BE8C48200D4601E /* CoreMLTesting */ = {
 			isa = PBXGroup;
 			children = (
-				70390F092BE91CDA00D4601E /* yolov8n.mlpackage */,
+				70CD51302BEA4A66008AC881 /* yolov8n.mlpackage */,
 				70390EE32BE8C48200D4601E /* AppDelegate.swift */,
 				70390EE52BE8C48200D4601E /* SceneDelegate.swift */,
 				70390EE72BE8C48200D4601E /* ViewController.swift */,
@@ -148,8 +148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				70390EE82BE8C48200D4601E /* ViewController.swift in Sources */,
+				70CD51312BEA4A66008AC881 /* yolov8n.mlpackage in Sources */,
 				70390F0C2BE922DA00D4601E /* Detection.swift in Sources */,
-				70390F0A2BE91CDA00D4601E /* yolov8n.mlpackage in Sources */,
 				70390EE42BE8C48200D4601E /* AppDelegate.swift in Sources */,
 				70390EE62BE8C48200D4601E /* SceneDelegate.swift in Sources */,
 				70390EFA2BE8ED5000D4601E /* CoreMLViewController.swift in Sources */,

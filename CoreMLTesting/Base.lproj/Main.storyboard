@@ -16,12 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="None selected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2g2-F3-Mqu">
-                                <rect key="frame" x="16" y="797" width="361" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VRO-u4-aE7">
                                 <rect key="frame" x="154" y="443" width="85" height="35"/>
                                 <state key="normal" title="Button"/>
@@ -34,25 +28,18 @@
                                 <rect key="frame" x="160" y="486" width="73" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="ONNX"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wzu-zY-pEJ">
-                                <rect key="frame" x="147" y="754" width="99" height="35"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Select file"/>
+                                <connections>
+                                    <segue destination="H2f-pM-xWQ" kind="show" id="3lM-O4-gh7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2g2-F3-Mqu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="4qw-wX-QvC"/>
                             <constraint firstItem="ZQY-Hd-GGr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LAz-Ey-TiS"/>
-                            <constraint firstItem="2g2-F3-Mqu" firstAttribute="top" secondItem="Wzu-zY-pEJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Mxv-dm-Scm"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2g2-F3-Mqu" secondAttribute="bottom" id="OYr-y3-MIy"/>
                             <constraint firstItem="VRO-u4-aE7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Xew-5L-lfl"/>
                             <constraint firstItem="ZQY-Hd-GGr" firstAttribute="top" secondItem="VRO-u4-aE7" secondAttribute="bottom" constant="8" symbolic="YES" id="adm-Px-aFX"/>
                             <constraint firstItem="VRO-u4-aE7" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="hkl-XY-iXK"/>
-                            <constraint firstItem="Wzu-zY-pEJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nVF-1n-cmW"/>
-                            <constraint firstItem="2g2-F3-Mqu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rY5-gg-Kp8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="j2F-TC-eDp"/>
@@ -107,6 +94,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c1o-jz-hfX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-508" y="-23"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Con-PN-oCg">
+            <objects>
+                <viewController id="H2f-pM-xWQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dxy-vY-DWC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4SS-CZ-OL2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xRE-pM-Vuc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MYo-XQ-4CT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1260" y="718"/>
         </scene>
     </scenes>
     <resources>
