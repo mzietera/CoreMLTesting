@@ -113,7 +113,7 @@ final class CoreMLViewController: UIViewController {
     private func process(vnObservations: [VNRecognizedObjectObservation]) {
         let peopleObservations = vnObservations.filter({
             $0.labels.first?.identifier as? String == "person" &&
-            $0.labels.first?.confidence as? Float ?? 0.0 > 0.9
+            $0.labels.first?.confidence as? Float ?? 0.0 >= 0.9
         })
         var detections = [Detection]()
         for personObservation in peopleObservations {
@@ -174,12 +174,5 @@ extension CoreMLViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
         } catch {
             print(error)
         }
-    }
-}
-
-
-extension CGRect {
-    var flippedVertically: CGRect {
-        return CGRect(x: minX, y: 1-maxY, width: width, height: height)
     }
 }

@@ -1,0 +1,7 @@
+{
+  "MLModelCreatorDefinedKey" : {
+    "com.github.apple.coremltools.source_dialect" : "TorchScript",
+    "com.github.apple.coremltools.source" : "torch==2.0.0+cpu",
+    "com.github.apple.coremltools.version" : "7.2"
+  }
+}

@@ -15,8 +15,15 @@
 		70390EF02BE8C48500D4601E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70390EEE2BE8C48500D4601E /* LaunchScreen.storyboard */; };
 		70390EFA2BE8ED5000D4601E /* CoreMLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70390EF92BE8ED5000D4601E /* CoreMLViewController.swift */; };
 		70390F0C2BE922DA00D4601E /* Detection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70390F0B2BE922DA00D4601E /* Detection.swift */; };
+		707D077A2BF48D700044742E /* NonMaxSuppression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707D07792BF48D700044742E /* NonMaxSuppression.swift */; };
+		707D077C2BF495070044742E /* yolov8n_transposed.onnx in Resources */ = {isa = PBXBuildFile; fileRef = 707D077B2BF495070044742E /* yolov8n_transposed.onnx */; };
+		707D077E2BF49F810044742E /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707D077D2BF49F810044742E /* UIImage+CVPixelBuffer.swift */; };
 		70CD51312BEA4A66008AC881 /* yolov8n.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 70CD51302BEA4A66008AC881 /* yolov8n.mlpackage */; };
 		70CD51332BEA50C3008AC881 /* yolov8n.onnx in Resources */ = {isa = PBXBuildFile; fileRef = 70CD51322BEA50C3008AC881 /* yolov8n.onnx */; };
+		70CD51352BEA5437008AC881 /* ONNXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CD51342BEA5437008AC881 /* ONNXViewController.swift */; };
+		70CD51382BEA54D3008AC881 /* CGRect+flippedVertically.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CD51372BEA54D3008AC881 /* CGRect+flippedVertically.swift */; };
+		70CD513C2BEE1896008AC881 /* CoreMLRTMPoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CD513B2BEE1896008AC881 /* CoreMLRTMPoseViewController.swift */; };
+		70CD51422BEE7C63008AC881 /* ONNXModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CD51412BEE7C63008AC881 /* ONNXModelController.swift */; };
 		857EA3BB8717C26634A660D9 /* Pods_CoreMLTesting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F39FE945C9559AEFA1F367F /* Pods_CoreMLTesting.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,8 +40,15 @@
 		70390EF12BE8C48500D4601E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70390EF92BE8ED5000D4601E /* CoreMLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLViewController.swift; sourceTree = "<group>"; };
 		70390F0B2BE922DA00D4601E /* Detection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detection.swift; sourceTree = "<group>"; };
+		707D07792BF48D700044742E /* NonMaxSuppression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonMaxSuppression.swift; sourceTree = "<group>"; };
+		707D077B2BF495070044742E /* yolov8n_transposed.onnx */ = {isa = PBXFileReference; lastKnownFileType = file; path = yolov8n_transposed.onnx; sourceTree = SOURCE_ROOT; };
+		707D077D2BF49F810044742E /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
 		70CD51302BEA4A66008AC881 /* yolov8n.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = yolov8n.mlpackage; sourceTree = SOURCE_ROOT; };
 		70CD51322BEA50C3008AC881 /* yolov8n.onnx */ = {isa = PBXFileReference; lastKnownFileType = file; path = yolov8n.onnx; sourceTree = SOURCE_ROOT; };
+		70CD51342BEA5437008AC881 /* ONNXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ONNXViewController.swift; sourceTree = "<group>"; };
+		70CD51372BEA54D3008AC881 /* CGRect+flippedVertically.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+flippedVertically.swift"; sourceTree = "<group>"; };
+		70CD513B2BEE1896008AC881 /* CoreMLRTMPoseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLRTMPoseViewController.swift; sourceTree = "<group>"; };
+		70CD51412BEE7C63008AC881 /* ONNXModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ONNXModelController.swift; sourceTree = "<group>"; };
 		8AB5FF3417A91D02BD83C2E9 /* Pods-CoreMLTesting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreMLTesting.release.xcconfig"; path = "Target Support Files/Pods-CoreMLTesting/Pods-CoreMLTesting.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,8 +85,10 @@
 		70390EE22BE8C48200D4601E /* CoreMLTesting */ = {
 			isa = PBXGroup;
 			children = (
+				70CD51362BEA54C4008AC881 /* Extensions */,
 				70CD51302BEA4A66008AC881 /* yolov8n.mlpackage */,
 				70CD51322BEA50C3008AC881 /* yolov8n.onnx */,
+				707D077B2BF495070044742E /* yolov8n_transposed.onnx */,
 				70390EE32BE8C48200D4601E /* AppDelegate.swift */,
 				70390EE52BE8C48200D4601E /* SceneDelegate.swift */,
 				70390EE72BE8C48200D4601E /* ViewController.swift */,
@@ -81,9 +97,22 @@
 				70390EEE2BE8C48500D4601E /* LaunchScreen.storyboard */,
 				70390EF12BE8C48500D4601E /* Info.plist */,
 				70390EF92BE8ED5000D4601E /* CoreMLViewController.swift */,
+				70CD513B2BEE1896008AC881 /* CoreMLRTMPoseViewController.swift */,
+				70CD51342BEA5437008AC881 /* ONNXViewController.swift */,
 				70390F0B2BE922DA00D4601E /* Detection.swift */,
+				70CD51412BEE7C63008AC881 /* ONNXModelController.swift */,
+				707D07792BF48D700044742E /* NonMaxSuppression.swift */,
 			);
 			path = CoreMLTesting;
+			sourceTree = "<group>";
+		};
+		70CD51362BEA54C4008AC881 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				70CD51372BEA54D3008AC881 /* CGRect+flippedVertically.swift */,
+				707D077D2BF49F810044742E /* UIImage+CVPixelBuffer.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		9A796A3F63939DBCEE9F744A /* Frameworks */ = {
@@ -162,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				707D077C2BF495070044742E /* yolov8n_transposed.onnx in Resources */,
 				70CD51332BEA50C3008AC881 /* yolov8n.onnx in Resources */,
 				70390EF02BE8C48500D4601E /* LaunchScreen.storyboard in Resources */,
 				70390EED2BE8C48500D4601E /* Assets.xcassets in Resources */,
@@ -205,8 +235,14 @@
 				70CD51312BEA4A66008AC881 /* yolov8n.mlpackage in Sources */,
 				70390F0C2BE922DA00D4601E /* Detection.swift in Sources */,
 				70390EE42BE8C48200D4601E /* AppDelegate.swift in Sources */,
+				707D077A2BF48D700044742E /* NonMaxSuppression.swift in Sources */,
 				70390EE62BE8C48200D4601E /* SceneDelegate.swift in Sources */,
+				70CD51352BEA5437008AC881 /* ONNXViewController.swift in Sources */,
+				707D077E2BF49F810044742E /* UIImage+CVPixelBuffer.swift in Sources */,
+				70CD51422BEE7C63008AC881 /* ONNXModelController.swift in Sources */,
 				70390EFA2BE8ED5000D4601E /* CoreMLViewController.swift in Sources */,
+				70CD51382BEA54D3008AC881 /* CGRect+flippedVertically.swift in Sources */,
+				70CD513C2BEE1896008AC881 /* CoreMLRTMPoseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

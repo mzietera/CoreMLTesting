@@ -1,0 +1,18 @@
+{
+  "Outputs" : {
+    "simcc_x" : {
+      "MLFeatureShortDescription" : ""
+    },
+    "simcc_y" : {
+      "MLFeatureShortDescription" : ""
+    }
+  },
+  "Inputs" : {
+    "input" : {
+      "MLFeatureShortDescription" : ""
+    }
+  },
+  "TrainingInputs" : {
+
+  }
+}
