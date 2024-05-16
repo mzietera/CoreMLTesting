@@ -18,6 +18,7 @@
 		707D077A2BF48D700044742E /* NonMaxSuppression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707D07792BF48D700044742E /* NonMaxSuppression.swift */; };
 		707D077C2BF495070044742E /* yolov8n_transposed.onnx in Resources */ = {isa = PBXBuildFile; fileRef = 707D077B2BF495070044742E /* yolov8n_transposed.onnx */; };
 		707D077E2BF49F810044742E /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707D077D2BF49F810044742E /* UIImage+CVPixelBuffer.swift */; };
+		707D078A2BF5019B0044742E /* yolov5n.onnx in Resources */ = {isa = PBXBuildFile; fileRef = 707D07892BF5019B0044742E /* yolov5n.onnx */; };
 		70CD51312BEA4A66008AC881 /* yolov8n.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 70CD51302BEA4A66008AC881 /* yolov8n.mlpackage */; };
 		70CD51332BEA50C3008AC881 /* yolov8n.onnx in Resources */ = {isa = PBXBuildFile; fileRef = 70CD51322BEA50C3008AC881 /* yolov8n.onnx */; };
 		70CD51352BEA5437008AC881 /* ONNXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CD51342BEA5437008AC881 /* ONNXViewController.swift */; };
@@ -43,6 +44,7 @@
 		707D07792BF48D700044742E /* NonMaxSuppression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonMaxSuppression.swift; sourceTree = "<group>"; };
 		707D077B2BF495070044742E /* yolov8n_transposed.onnx */ = {isa = PBXFileReference; lastKnownFileType = file; path = yolov8n_transposed.onnx; sourceTree = SOURCE_ROOT; };
 		707D077D2BF49F810044742E /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
+		707D07892BF5019B0044742E /* yolov5n.onnx */ = {isa = PBXFileReference; lastKnownFileType = file; path = yolov5n.onnx; sourceTree = SOURCE_ROOT; };
 		70CD51302BEA4A66008AC881 /* yolov8n.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = yolov8n.mlpackage; sourceTree = SOURCE_ROOT; };
 		70CD51322BEA50C3008AC881 /* yolov8n.onnx */ = {isa = PBXFileReference; lastKnownFileType = file; path = yolov8n.onnx; sourceTree = SOURCE_ROOT; };
 		70CD51342BEA5437008AC881 /* ONNXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ONNXViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				70CD51362BEA54C4008AC881 /* Extensions */,
 				70CD51302BEA4A66008AC881 /* yolov8n.mlpackage */,
 				70CD51322BEA50C3008AC881 /* yolov8n.onnx */,
+				707D07892BF5019B0044742E /* yolov5n.onnx */,
 				707D077B2BF495070044742E /* yolov8n_transposed.onnx */,
 				70390EE32BE8C48200D4601E /* AppDelegate.swift */,
 				70390EE52BE8C48200D4601E /* SceneDelegate.swift */,
@@ -194,6 +197,7 @@
 				707D077C2BF495070044742E /* yolov8n_transposed.onnx in Resources */,
 				70CD51332BEA50C3008AC881 /* yolov8n.onnx in Resources */,
 				70390EF02BE8C48500D4601E /* LaunchScreen.storyboard in Resources */,
+				707D078A2BF5019B0044742E /* yolov5n.onnx in Resources */,
 				70390EED2BE8C48500D4601E /* Assets.xcassets in Resources */,
 				70390EEB2BE8C48200D4601E /* Main.storyboard in Resources */,
 			);

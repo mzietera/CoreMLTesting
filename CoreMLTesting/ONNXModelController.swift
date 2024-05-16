@@ -16,9 +16,9 @@ final class ONNXModelController {
     
     let batchSize = 1
     let inputChannels = 3
-    let inputWidth = 480
+    let inputWidth = 640
     let inputHeight = 640
-    let threshold: Float = 0.5
+    let threshold: Float = 0.9
     
     private var session: ORTSession?
     
@@ -26,7 +26,7 @@ final class ONNXModelController {
     
     init() throws {
         Task {
-            guard let modelPath = Bundle.main.path(forResource: "yolov8n_transposed", ofType: "onnx") else {
+            guard let modelPath = Bundle.main.path(forResource: "yolov5n", ofType: "onnx") else {
                 throw OrtModelError.error("Could not load model")
             }
             
@@ -77,12 +77,12 @@ final class ONNXModelController {
         let inputTensor = try ORTValue(tensorData: NSMutableData(data: rgbData),
                                        elementType: ORTTensorElementDataType.float,
                                        shape: inputShape)
-        let startDate = Date()
+        
         let outputs = try session.run(withInputs: [inputName: inputTensor],
-                                      outputNames: ["final_output0"],
+                                      outputNames: ["output0"],
                                       runOptions: nil)
         
-        guard let rawOutputValue = outputs["final_output0"] else {
+        guard let rawOutputValue = outputs["output0"] else {
             throw OrtModelError.error("failed to get model output")
         }
         
@@ -163,7 +163,27 @@ final class ONNXModelController {
                 blue.append(imageBytes[index+2])
                 index += 3
             }
-            let combined = red + green + blue
+//            let byteData = combined.map { Float($0) / maxRGBValue }.prefix(1280)
+//            print(byteData)
+//            print(combined.prefix(1280))
+            
+            
+            var blueTransposed = [UInt8]()
+            var greenTransposed = [UInt8]()
+            var redTransposed = [UInt8]()
+            
+            for i in 0...639 {
+                var rowIndex = i
+                while rowIndex < 640*640 {
+                    blueTransposed.append(blue[rowIndex])
+                    greenTransposed.append(green[rowIndex])
+                    redTransposed.append(red[rowIndex])
+                    rowIndex += 640
+                }
+            }
+//            let combined = blue + green + red
+            let combined = redTransposed + greenTransposed + blueTransposed
+            
             return Data(copyingBufferOf: combined.map { Float($0) / maxRGBValue })
         } else {
             let converted = Data(copyingBufferOf: imageBytes.map { Float($0) / maxRGBValue }) // 0-255 to 0-1
@@ -246,13 +266,20 @@ final class ONNXModelController {
     func postprocess(output: [Float32]) -> [Detection] {
         // filter out bounding boxes for person and with confidence greater than threshold
         var boxes = [BoundingBox]()
-        for i in 0...(6300 - 1) {
-            let confidence = output[i*84 + 4]
+        for i in 0...(25200 - 1) {
+//            let objectness = output[i*85 + 4]
+//            let personClassConfidence = output[i*85 + 5]
+//            let confidence = objectness * personClassConfidence
+            let confidence = output[i*85 + 5]
+//            print(output[i*85...i*85+5])
+//            print("index \(i): \(output[i*85]) \(output[i*85 + 1]) \(output[i*85 + 2]) \(output[i*85 + 3]) \(output[i*85 + 5])")
+            
+            
             if confidence >= threshold {
-                let midX = CGFloat(output[i*84])
-                let midY = CGFloat(output[i*84 + 1])
-                let width = CGFloat(output[i*84 + 2])
-                let height = CGFloat(output[i*84 + 3])
+                let midX = CGFloat(output[i*85])
+                let midY = CGFloat(output[i*85 + 1])
+                let width = CGFloat(output[i*85 + 2])
+                let height = CGFloat(output[i*85 + 3])
                 boxes.append(.init(
                     classIndex: 0,
                     score: confidence,
@@ -263,10 +290,25 @@ final class ONNXModelController {
                         height: height
                     ))
                 )
+                
+//                let minX = CGFloat(output[i*85])
+//                let minY = CGFloat(output[i*85 + 1])
+//                let maxX = CGFloat(output[i*85 + 2])
+//                let maxY = CGFloat(output[i*85 + 3])
+//                boxes.append(.init(
+//                    classIndex: 0,
+//                    score: confidence,
+//                    rect: .init(
+//                        x: minX,
+//                        y: minY,
+//                        width: maxX - minX,
+//                        height: maxY - minY
+//                    ))
+//                )
             }
         }
         
-        let indices = nonMaxSuppression(boundingBoxes: boxes, iouThreshold: 0.45, maxBoxes: 20)
+        let indices = nonMaxSuppression(boundingBoxes: boxes, iouThreshold: 0.45, maxBoxes: 100)
         var detections = [Detection]()
         for index in indices {
             detections.append(.init(

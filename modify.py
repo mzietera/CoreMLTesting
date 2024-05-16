@@ -143,7 +143,7 @@ import coremltools as mlt
 
 
 
-model_path = 'yolov8n-kopia.onnx'
+model_path = 'yolov5n.onnx'
 onnx_model = onnx.load(model_path)
 #onnx_fpath = f"{weight_folder}/best_nms.onnx"
 
@@ -155,7 +155,7 @@ graph.node.append(reshape_node)
 transpose_node = onnx.helper.make_node("Transpose", inputs=["squeezed_output0"], outputs=["final_output0"], perm=(1,0))
 graph.node.append(transpose_node)
 
-output_value_info = onnx.helper.make_tensor_value_info("final_output0", TensorProto.FLOAT, shape=[6300,84])
+output_value_info = onnx.helper.make_tensor_value_info("final_output0", TensorProto.FLOAT, shape=[25200, 85])
 graph.output.append(output_value_info)
 
 # operation to transpose bbox before pass to NMS node

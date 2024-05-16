@@ -112,14 +112,16 @@ extension ONNXViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
     ) {
         
 //        let testImage = UIImage(named: "wallpapersden.com_tom-hiddleston-man-suit_480x640")!
-//        
-//        guard let pixelBuffer = testImage.pixelBuffer(width: 480, height: 640) else {
-//            return
-//        }
+        let testImage = UIImage(named: "size0-full")!
+//        let testImage = UIImage(named: "test")!
         
-        guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
+        guard let pixelBuffer = testImage.pixelBuffer(width: 640, height: 640) else {
             return
         }
+        
+//        guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
+//            return
+//        }
         let width = CVPixelBufferGetWidth(pixelBuffer)
         let height = CVPixelBufferGetHeight(pixelBuffer)
         let image = CIImage(cvImageBuffer: pixelBuffer)

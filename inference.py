@@ -6,6 +6,12 @@ import numpy as np
 import onnxruntime
 from onnx import numpy_helper
 
+def flatten_list(nested_list):
+    flat_list = []
+    for sublist in nested_list:
+        for item in sublist:
+            flat_list.append(item)
+    return flat_list
 
 yolo_classes = [
     "person", "bicycle", "car", "motorcycle", "airplane", "bus", "train", "truck", "boat",
@@ -25,45 +31,72 @@ def parse_row(row):
     y1 = (yc-h/2)
     x2 = (xc+w/2)
     y2 = (yc+h/2)
-    prob = row[4:].max()
-    class_id = row[4:].argmax()
+    prob = row[5:].max()
+    class_id = row[5:].argmax()
     label = yolo_classes[class_id]
     return [x1,y1,x2,y2,label,prob]
 
 model_dir ="./"
-model=model_dir+"/modified-model.onnx"
+model=model_dir+"yolov5n.onnx"
 path=sys.argv[1]
 
 img = cv2.imread(path)
-print(img)
-#img.resize((1, 3, 640, 480))
+# img = cv2.resize(img, (640,640), interpolation = cv2.INTER_AREA)
+#print(img)
+#input = np.array(img)
+#print(input.shape)
+#img.resize((640, 640, 3))
 input = np.array(img)
-print(len(input))
-print(len(input[0]))
-print(len(input[0][0]))
+print(input.shape)
+
+#print(len(input))
+#print(len(input[0]))
+#print(len(input[0][0]))
 #print(input[1][1][0])
 #print(input[2][2][1])
 #print(input[3][3][2])
 print(input.shape)
 input = input.transpose(2,0,1)
 print(input.shape)
-input = input.reshape(1,3,640,480)
+input = input.reshape(1,3,640,640)
+print(input[0][0][0][:640])
+imageArray = input[0][0][0]
+np.set_printoptions(threshold=sys.maxsize)
+print(imageArray)
+# flattened = flatten_list(imageArray)
+# with open("output.txt", "w") as f:
+#   content = str(imageArray)
+#   f.write(content)
+
 input = (input/255.0).astype(np.float32)
-print(input)
+
+
+print(len(input[0][1]))
+print(input[0][0][0][:640])
+
+# for i in range(640):
+#   print(input[0][0][i])
 #data = json.dumps({'data': img.tolist()})
 #data = np.array(json.loads(data)['data']).astype('float32')
 session = onnxruntime.InferenceSession(model, None)
 input_name = session.get_inputs()[0].name
-output_name = session.get_outputs()[1].name
+output_name = session.get_outputs()[0].name
 
 print(input_name)
 print(output_name)
 
 result = session.run([output_name], {input_name: input})
+
+print(len(result))
+print(len(result[0]))
+print(len(result[0][0]))
+print(len(result[0][0][0]))
+
 #prediction=int(np.argmax(np.array(result).squeeze(), axis = 0))
 #print(prediction)
 #print(len(result[0][0].squeeze()))
-boxes = [row for row in [parse_row(row) for row in result[0]] if row[5]>0.9]
+boxes = [row for row in [parse_row(row) for row in result[0][0]] if (row[5]>0.9 and row[4]=="person")]
+#print(len(boxes))
 print(len(boxes))
 print(boxes)
 #for x in range(0, 6299):
