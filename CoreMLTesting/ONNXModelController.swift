@@ -52,17 +52,23 @@ final class ONNXModelController {
         let imageChannels = 4
         assert(imageChannels >= inputChannels)
         
-//        let imageWidth = CVPixelBufferGetWidth(pixelBuffer)
-//        let imageHeight = CVPixelBufferGetHeight(pixelBuffer)
-//        let scaledSize = CGSize(width: inputWidth, height: inputHeight)
-//        guard let scaledPixelBuffer = preprocess(ofSize: scaledSize, pixelBuffer) else {
-//            return []
-//        }
+        let imageWidth = CGFloat(CVPixelBufferGetWidth(pixelBuffer))
+        let imageHeight = CGFloat(CVPixelBufferGetHeight(pixelBuffer))
+        let scaledSize = CGSize(width: inputWidth, height: inputHeight)
+        guard let scaledPixelBuffer = preprocess(ofSize: scaledSize, pixelBuffer) else {
+            return []
+        }
+        
+        let image = CIImage(cvImageBuffer: pixelBuffer)
+        let uiImage = UIImage(ciImage: image)
+        
+        let scaled = CIImage(cvImageBuffer: scaledPixelBuffer)
+        let scaleduiImage = UIImage(ciImage: scaled)
         
         let inputName = "images"
         
         guard let rgbData = rgbDataFromBuffer(
-            pixelBuffer,
+            scaledPixelBuffer,
             isModelQuantized: false
         ) else {
             print("Failed to convert the image buffer to RGB data.")
@@ -90,7 +96,7 @@ final class ONNXModelController {
         guard let outputArr: [Float32] = Array(unsafeData: rawOutputData) else {
             return []
         }
-        return postprocess(output: outputArr)
+        return postprocess(output: outputArr, imageWidth: imageWidth, imageHeight: imageHeight)
     }
     
     private func rgbDataFromBuffer(
@@ -163,27 +169,7 @@ final class ONNXModelController {
                 blue.append(imageBytes[index+2])
                 index += 3
             }
-//            let byteData = combined.map { Float($0) / maxRGBValue }.prefix(1280)
-//            print(byteData)
-//            print(combined.prefix(1280))
-            
-            
-            var blueTransposed = [UInt8]()
-            var greenTransposed = [UInt8]()
-            var redTransposed = [UInt8]()
-            
-            for i in 0...639 {
-                var rowIndex = i
-                while rowIndex < 640*640 {
-                    blueTransposed.append(blue[rowIndex])
-                    greenTransposed.append(green[rowIndex])
-                    redTransposed.append(red[rowIndex])
-                    rowIndex += 640
-                }
-            }
-//            let combined = blue + green + red
-            let combined = redTransposed + greenTransposed + blueTransposed
-            
+            let combined = red + green + blue
             return Data(copyingBufferOf: combined.map { Float($0) / maxRGBValue })
         } else {
             let converted = Data(copyingBufferOf: imageBytes.map { Float($0) / maxRGBValue }) // 0-255 to 0-1
@@ -263,23 +249,16 @@ final class ONNXModelController {
         return scaledPixelBuffer
     }
     
-    func postprocess(output: [Float32]) -> [Detection] {
+    func postprocess(output: [Float32], imageWidth: CGFloat, imageHeight: CGFloat) -> [Detection] {
         // filter out bounding boxes for person and with confidence greater than threshold
         var boxes = [BoundingBox]()
         for i in 0...(25200 - 1) {
-//            let objectness = output[i*85 + 4]
-//            let personClassConfidence = output[i*85 + 5]
-//            let confidence = objectness * personClassConfidence
             let confidence = output[i*85 + 5]
-//            print(output[i*85...i*85+5])
-//            print("index \(i): \(output[i*85]) \(output[i*85 + 1]) \(output[i*85 + 2]) \(output[i*85 + 3]) \(output[i*85 + 5])")
-            
-            
             if confidence >= threshold {
-                let midX = CGFloat(output[i*85])
-                let midY = CGFloat(output[i*85 + 1])
-                let width = CGFloat(output[i*85 + 2])
-                let height = CGFloat(output[i*85 + 3])
+                let midX = (CGFloat(output[i*85]) / 640) * imageWidth
+                let midY = (CGFloat(output[i*85 + 1]) / 640) * imageHeight
+                let width = (CGFloat(output[i*85 + 2]) / 640) * imageWidth
+                let height = (CGFloat(output[i*85 + 3]) / 640) * imageHeight
                 boxes.append(.init(
                     classIndex: 0,
                     score: confidence,
@@ -290,25 +269,9 @@ final class ONNXModelController {
                         height: height
                     ))
                 )
-                
-//                let minX = CGFloat(output[i*85])
-//                let minY = CGFloat(output[i*85 + 1])
-//                let maxX = CGFloat(output[i*85 + 2])
-//                let maxY = CGFloat(output[i*85 + 3])
-//                boxes.append(.init(
-//                    classIndex: 0,
-//                    score: confidence,
-//                    rect: .init(
-//                        x: minX,
-//                        y: minY,
-//                        width: maxX - minX,
-//                        height: maxY - minY
-//                    ))
-//                )
             }
         }
-        
-        let indices = nonMaxSuppression(boundingBoxes: boxes, iouThreshold: 0.45, maxBoxes: 100)
+        let indices = nonMaxSuppression(boundingBoxes: boxes, iouThreshold: 0.01, maxBoxes: 200)
         var detections = [Detection]()
         for index in indices {
             detections.append(.init(

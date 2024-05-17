@@ -30,7 +30,6 @@ final class ONNXViewController: UIViewController {
         DispatchQueue.global(qos: .userInitiated).async {
             self.captureSession.startRunning()
         }
-        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -52,7 +51,6 @@ final class ONNXViewController: UIViewController {
             return
         }
         captureSession.sessionPreset = .vga640x480
-        
         captureSession.addInput(videoDeviceInput)
         captureSession.commitConfiguration()
         
@@ -74,7 +72,9 @@ final class ONNXViewController: UIViewController {
         if captureSession.canAddOutput(videoDataOutput) {
             captureSession.addOutput(videoDataOutput)
             videoDataOutput.alwaysDiscardsLateVideoFrames = true
-            videoDataOutput.videoSettings = [kCVPixelBufferPixelFormatTypeKey as String: Int( kCVPixelFormatType_32BGRA)]
+            videoDataOutput.videoSettings = [
+                kCVPixelBufferPixelFormatTypeKey as String: Int( kCVPixelFormatType_32BGRA)
+            ]
             videoDataOutput.setSampleBufferDelegate(self, queue: videoDataOutputQueue)
             if let captureConnection = videoDataOutput.connection(with: .video) {
                 if captureConnection.isVideoRotationAngleSupported(90) {
@@ -112,16 +112,16 @@ extension ONNXViewController: AVCaptureVideoDataOutputSampleBufferDelegate {
     ) {
         
 //        let testImage = UIImage(named: "wallpapersden.com_tom-hiddleston-man-suit_480x640")!
-        let testImage = UIImage(named: "size0-full")!
+//        let testImage = UIImage(named: "size0-full")!
 //        let testImage = UIImage(named: "test")!
-        
-        guard let pixelBuffer = testImage.pixelBuffer(width: 640, height: 640) else {
-            return
-        }
-        
-//        guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
+//        
+//        guard let pixelBuffer = testImage.pixelBuffer(width: 640, height: 640) else {
 //            return
 //        }
+        
+        guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
+            return
+        }
         let width = CVPixelBufferGetWidth(pixelBuffer)
         let height = CVPixelBufferGetHeight(pixelBuffer)
         let image = CIImage(cvImageBuffer: pixelBuffer)
