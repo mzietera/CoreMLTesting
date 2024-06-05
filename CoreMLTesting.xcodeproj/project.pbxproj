@@ -15,10 +15,16 @@
 		70390EF02BE8C48500D4601E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70390EEE2BE8C48500D4601E /* LaunchScreen.storyboard */; };
 		70390EFA2BE8ED5000D4601E /* CoreMLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70390EF92BE8ED5000D4601E /* CoreMLViewController.swift */; };
 		70390F0C2BE922DA00D4601E /* Detection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70390F0B2BE922DA00D4601E /* Detection.swift */; };
+		70704B842BFDF4CC005708A2 /* ONNXRTMPoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70704B832BFDF4CC005708A2 /* ONNXRTMPoseViewController.swift */; };
+		70704B862BFDF62B005708A2 /* ONNXRTMPoseModelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70704B852BFDF62B005708A2 /* ONNXRTMPoseModelController.swift */; };
+		70704B882BFDF6CA005708A2 /* rtmpose-m.onnx in Resources */ = {isa = PBXBuildFile; fileRef = 70704B872BFDF6CA005708A2 /* rtmpose-m.onnx */; };
+		70704B912BFE17FD005708A2 /* OpenCVBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 70704B902BFE17FD005708A2 /* OpenCVBridge.mm */; };
 		707D077A2BF48D700044742E /* NonMaxSuppression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707D07792BF48D700044742E /* NonMaxSuppression.swift */; };
 		707D077C2BF495070044742E /* yolov8n_transposed.onnx in Resources */ = {isa = PBXBuildFile; fileRef = 707D077B2BF495070044742E /* yolov8n_transposed.onnx */; };
 		707D077E2BF49F810044742E /* UIImage+CVPixelBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707D077D2BF49F810044742E /* UIImage+CVPixelBuffer.swift */; };
 		707D078A2BF5019B0044742E /* yolov5n.onnx in Resources */ = {isa = PBXBuildFile; fileRef = 707D07892BF5019B0044742E /* yolov5n.onnx */; };
+		70AEDBA12BFF61F700CA74A0 /* KeypointsDetection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AEDBA02BFF61F700CA74A0 /* KeypointsDetection.swift */; };
+		70AEDBA32BFF7C6300CA74A0 /* UIColor+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AEDBA22BFF7C6300CA74A0 /* UIColor+init.swift */; };
 		70CD51312BEA4A66008AC881 /* yolov8n.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 70CD51302BEA4A66008AC881 /* yolov8n.mlpackage */; };
 		70CD51332BEA50C3008AC881 /* yolov8n.onnx in Resources */ = {isa = PBXBuildFile; fileRef = 70CD51322BEA50C3008AC881 /* yolov8n.onnx */; };
 		70CD51352BEA5437008AC881 /* ONNXViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70CD51342BEA5437008AC881 /* ONNXViewController.swift */; };
@@ -41,10 +47,18 @@
 		70390EF12BE8C48500D4601E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70390EF92BE8ED5000D4601E /* CoreMLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLViewController.swift; sourceTree = "<group>"; };
 		70390F0B2BE922DA00D4601E /* Detection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detection.swift; sourceTree = "<group>"; };
+		70704B832BFDF4CC005708A2 /* ONNXRTMPoseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ONNXRTMPoseViewController.swift; sourceTree = "<group>"; };
+		70704B852BFDF62B005708A2 /* ONNXRTMPoseModelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ONNXRTMPoseModelController.swift; sourceTree = "<group>"; };
+		70704B872BFDF6CA005708A2 /* rtmpose-m.onnx */ = {isa = PBXFileReference; lastKnownFileType = text; path = "rtmpose-m.onnx"; sourceTree = SOURCE_ROOT; };
+		70704B8B2BFE1549005708A2 /* CoreMLTesting-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreMLTesting-Bridging-Header.h"; sourceTree = "<group>"; };
+		70704B8F2BFE17AE005708A2 /* OpenCVBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVBridge.h; sourceTree = "<group>"; };
+		70704B902BFE17FD005708A2 /* OpenCVBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVBridge.mm; sourceTree = "<group>"; };
 		707D07792BF48D700044742E /* NonMaxSuppression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonMaxSuppression.swift; sourceTree = "<group>"; };
 		707D077B2BF495070044742E /* yolov8n_transposed.onnx */ = {isa = PBXFileReference; lastKnownFileType = file; path = yolov8n_transposed.onnx; sourceTree = SOURCE_ROOT; };
 		707D077D2BF49F810044742E /* UIImage+CVPixelBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+CVPixelBuffer.swift"; sourceTree = "<group>"; };
 		707D07892BF5019B0044742E /* yolov5n.onnx */ = {isa = PBXFileReference; lastKnownFileType = file; path = yolov5n.onnx; sourceTree = SOURCE_ROOT; };
+		70AEDBA02BFF61F700CA74A0 /* KeypointsDetection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeypointsDetection.swift; sourceTree = "<group>"; };
+		70AEDBA22BFF7C6300CA74A0 /* UIColor+init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+init.swift"; sourceTree = "<group>"; };
 		70CD51302BEA4A66008AC881 /* yolov8n.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = yolov8n.mlpackage; sourceTree = SOURCE_ROOT; };
 		70CD51322BEA50C3008AC881 /* yolov8n.onnx */ = {isa = PBXFileReference; lastKnownFileType = file; path = yolov8n.onnx; sourceTree = SOURCE_ROOT; };
 		70CD51342BEA5437008AC881 /* ONNXViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ONNXViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +106,7 @@
 				70CD51322BEA50C3008AC881 /* yolov8n.onnx */,
 				707D07892BF5019B0044742E /* yolov5n.onnx */,
 				707D077B2BF495070044742E /* yolov8n_transposed.onnx */,
+				70704B872BFDF6CA005708A2 /* rtmpose-m.onnx */,
 				70390EE32BE8C48200D4601E /* AppDelegate.swift */,
 				70390EE52BE8C48200D4601E /* SceneDelegate.swift */,
 				70390EE72BE8C48200D4601E /* ViewController.swift */,
@@ -100,13 +115,27 @@
 				70390EEE2BE8C48500D4601E /* LaunchScreen.storyboard */,
 				70390EF12BE8C48500D4601E /* Info.plist */,
 				70390EF92BE8ED5000D4601E /* CoreMLViewController.swift */,
-				70CD513B2BEE1896008AC881 /* CoreMLRTMPoseViewController.swift */,
 				70CD51342BEA5437008AC881 /* ONNXViewController.swift */,
+				70CD513B2BEE1896008AC881 /* CoreMLRTMPoseViewController.swift */,
+				70704B832BFDF4CC005708A2 /* ONNXRTMPoseViewController.swift */,
 				70390F0B2BE922DA00D4601E /* Detection.swift */,
-				70CD51412BEE7C63008AC881 /* ONNXModelController.swift */,
 				707D07792BF48D700044742E /* NonMaxSuppression.swift */,
+				70704B8B2BFE1549005708A2 /* CoreMLTesting-Bridging-Header.h */,
+				70704B8F2BFE17AE005708A2 /* OpenCVBridge.h */,
+				70704B902BFE17FD005708A2 /* OpenCVBridge.mm */,
+				70AEDBA02BFF61F700CA74A0 /* KeypointsDetection.swift */,
+				70AEDBA52C10B0CB00CA74A0 /* ModelControllers */,
 			);
 			path = CoreMLTesting;
+			sourceTree = "<group>";
+		};
+		70AEDBA52C10B0CB00CA74A0 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				70CD51412BEE7C63008AC881 /* ONNXModelController.swift */,
+				70704B852BFDF62B005708A2 /* ONNXRTMPoseModelController.swift */,
+			);
+			path = ModelControllers;
 			sourceTree = "<group>";
 		};
 		70CD51362BEA54C4008AC881 /* Extensions */ = {
@@ -114,6 +143,7 @@
 			children = (
 				70CD51372BEA54D3008AC881 /* CGRect+flippedVertically.swift */,
 				707D077D2BF49F810044742E /* UIImage+CVPixelBuffer.swift */,
+				70AEDBA22BFF7C6300CA74A0 /* UIColor+init.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -168,6 +198,7 @@
 				TargetAttributes = {
 					70390EDF2BE8C48200D4601E = {
 						CreatedOnToolsVersion = 15.1;
+						LastSwiftMigration = 1510;
 					};
 				};
 			};
@@ -196,6 +227,7 @@
 			files = (
 				707D077C2BF495070044742E /* yolov8n_transposed.onnx in Resources */,
 				70CD51332BEA50C3008AC881 /* yolov8n.onnx in Resources */,
+				70704B882BFDF6CA005708A2 /* rtmpose-m.onnx in Resources */,
 				70390EF02BE8C48500D4601E /* LaunchScreen.storyboard in Resources */,
 				707D078A2BF5019B0044742E /* yolov5n.onnx in Resources */,
 				70390EED2BE8C48500D4601E /* Assets.xcassets in Resources */,
@@ -236,16 +268,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				70390EE82BE8C48200D4601E /* ViewController.swift in Sources */,
+				70704B912BFE17FD005708A2 /* OpenCVBridge.mm in Sources */,
+				70AEDBA32BFF7C6300CA74A0 /* UIColor+init.swift in Sources */,
 				70CD51312BEA4A66008AC881 /* yolov8n.mlpackage in Sources */,
 				70390F0C2BE922DA00D4601E /* Detection.swift in Sources */,
 				70390EE42BE8C48200D4601E /* AppDelegate.swift in Sources */,
 				707D077A2BF48D700044742E /* NonMaxSuppression.swift in Sources */,
 				70390EE62BE8C48200D4601E /* SceneDelegate.swift in Sources */,
 				70CD51352BEA5437008AC881 /* ONNXViewController.swift in Sources */,
+				70AEDBA12BFF61F700CA74A0 /* KeypointsDetection.swift in Sources */,
 				707D077E2BF49F810044742E /* UIImage+CVPixelBuffer.swift in Sources */,
+				70704B842BFDF4CC005708A2 /* ONNXRTMPoseViewController.swift in Sources */,
 				70CD51422BEE7C63008AC881 /* ONNXModelController.swift in Sources */,
 				70390EFA2BE8ED5000D4601E /* CoreMLViewController.swift in Sources */,
 				70CD51382BEA54D3008AC881 /* CGRect+flippedVertically.swift in Sources */,
+				70704B862BFDF62B005708A2 /* ONNXRTMPoseModelController.swift in Sources */,
 				70CD513C2BEE1896008AC881 /* CoreMLRTMPoseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,9 +434,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M34LKZYYXA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CoreMLTesting",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoreMLTesting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -415,6 +458,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mz.CoreMLTesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CoreMLTesting/CoreMLTesting-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -426,9 +471,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M34LKZYYXA;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CoreMLTesting",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoreMLTesting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -444,6 +495,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = mz.CoreMLTesting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "CoreMLTesting/CoreMLTesting-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

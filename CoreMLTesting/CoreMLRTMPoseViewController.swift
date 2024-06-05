@@ -151,13 +151,6 @@ extension CoreMLRTMPoseViewController: AVCaptureVideoDataOutputSampleBufferDeleg
         didOutput sampleBuffer: CMSampleBuffer,
         from connection: AVCaptureConnection
     ) {
-//        if videoSize == .zero {
-//            guard let videoWidth = sampleBuffer.formatDescription?.dimensions.width,
-//               let videoHeight = sampleBuffer.formatDescription?.dimensions.height else {
-//                fatalError()
-//            }
-//            videoSize = .init(width: CGFloat(videoWidth), height: CGFloat(videoHeight))
-//        }
         guard let pixelBuffer = CMSampleBufferGetImageBuffer(sampleBuffer) else {
             return
         }

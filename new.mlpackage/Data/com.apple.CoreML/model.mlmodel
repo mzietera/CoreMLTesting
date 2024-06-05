@@ -1,11327 +1,0 @@
-
-
-input
-"Ä¿R
-simcc_x*
-
-Ä†ÄR
-simcc_y*
-
-Ä†Ä¢•¢+
-$com.github.apple.coremltools.version7.2¢:
-+com.github.apple.coremltools.source_dialectTorchScript¢7
-#com.github.apple.coremltools.sourcetorch==2.0.0+cpu≤¿«Œ≈
-mainƒ≈
-)
-input 
-
-
-
-Ä
-¿CoreML5å≈
-CoreML5ˇƒsimcc_xsimcc_y≤
-const3
-#backbone_stage1_1_attention_fc_bias
-
-
-`*9
-name1
-)
-'"%
-#backbone_stage1_1_attention_fc_bias*9
-val2
-
-
-`*"
-@model_path/weights/weight.bin@€
-constG
-%backbone_stage1_1_attention_fc_weight
-
-`
-`
-
-*;
-name3
-+
-)"'
-%backbone_stage1_1_attention_fc_weight*L
-valE
-
-`
-`
-
-*#
-@model_path/weights/weight.binÄ∂
-const4
-#backbone_stage2_1_attention_fc_bias
-
-¿*9
-name1
-)
-'"%
-#backbone_stage2_1_attention_fc_bias*<
-val5
-
-¿*$
-@model_path/weights/weight.bin¿§‡
-constI
-%backbone_stage2_1_attention_fc_weight 
-
-¿
-¿
-
-*;
-name3
-+
-)"'
-%backbone_stage2_1_attention_fc_weight*O
-valH 
-
-¿
-¿
-
-*$
-@model_path/weights/weight.binÄ´∂
-const4
-#backbone_stage3_1_attention_fc_bias
-
-Ä*9
-name1
-)
-'"%
-#backbone_stage3_1_attention_fc_bias*<
-val5
-
-Ä*$
-@model_path/weights/weight.bin¿´‡
-constI
-%backbone_stage3_1_attention_fc_weight 
-
-Ä
-Ä
-
-*;
-name3
-+
-)"'
-%backbone_stage3_1_attention_fc_weight*O
-valH 
-
-Ä
-Ä
-
-*$
-@model_path/weights/weight.binÄ∏∂
-const4
-#backbone_stage4_2_attention_fc_bias
-
-Ä*9
-name1
-)
-'"%
-#backbone_stage4_2_attention_fc_bias*<
-val5
-
-Ä*$
-@model_path/weights/weight.bin¿∏/‡
-constI
-%backbone_stage4_2_attention_fc_weight 
-
-Ä
-Ä
-
-*;
-name3
-+
-)"'
-%backbone_stage4_2_attention_fc_weight*O
-valH 
-
-Ä
-Ä
-
-*$
-@model_path/weights/weight.binÄ—/ô
-const%
-head_final_layer_bias
-
-
-*+
-name#
-
-"
-head_final_layer_bias*<
-val5
-
-
-*%
-@model_path/weights/weight.bin¿—ø√
-const:
-head_final_layer_weight
-
-
-Ä
-
-*-
-name%
-
-"
-head_final_layer_weight*O
-valH
-
-
-Ä
-
-*%
-@model_path/weights/weight.binÄ”øl
-const
-head_mlp_0_g
-
-
-*"
-name
-
-"
-head_mlp_0_g*!
-val
-
-
-
-
-
-
-ÿ/?ü
-const(
-head_mlp_1_weight
-
-Ä
-0*'
-name
-
-"
-head_mlp_1_weight*C
-val<
-
-Ä
-0*%
-@model_path/weights/weight.bin¿√Æó
-const$
-head_gau_beta
-
-
-Ä*#
-name
-
-"
-head_gau_beta*C
-val<
-
-
-Ä*%
-@model_path/weights/weight.binÄƒ±n
-const
-head_gau_ln_g
-
-
-*#
-name
-
-"
-head_gau_ln_g*!
-val
-
-
-
-
-
-
-/˚>£
-const*
-head_gau_uv_weight
-
-Ä	
-Ä*(
-name 
-
-"
-head_gau_uv_weight*D
-val=
-
-Ä	
-Ä*%
-@model_path/weights/weight.bin¿Ã±°
-const)
-head_gau_o_weight
-
-Ä
-Ä*'
-name
-
-"
-head_gau_o_weight*D
-val=
-
-Ä
-Ä*%
-@model_path/weights/weight.binÄÕ˘°
-const)
-head_gau_res_scale_scale
-
-Ä*.
-name&
-
-"
-head_gau_res_scale_scale*=
-val6
-
-Ä*%
-@model_path/weights/weight.bin¿Õô°
-const)
-head_cls_x_weight
-
-Ä
-Ä*'
-name
-
-"
-head_cls_x_weight*D
-val=
-
-Ä
-Ä*%
-@model_path/weights/weight.binÄ÷ô°
-const)
-head_cls_y_weight
-
-Ä
-Ä*'
-name
-
-"
-head_cls_y_weight*D
-val=
-
-Ä
-Ä*%
-@model_path/weights/weight.bin¿÷±M
-const
-var_21
-*
-name
-
-	"
-op_21*
-val
-
-
-ÄM
-const
-var_22
-*
-name
-
-	"
-op_22*
-val
-
-
-¿L
-const
-var_23
-*
-name
-
-	"
-op_23*
-val
-
-
-`L
-const
-var_24
-*
-name
-
-	"
-op_24*
-val
-
-
-0L
-const
-var_31
-*
-name
-
-	"
-op_31*
-val
-
-
-]
-const
-var_44
-
-
-*
-name
-
-	"
-op_44*
-val
-
-
-
-
-]
-const
-var_46
-
-
-*
-name
-
-	"
-op_46*
-val
-
-
-
-
-l
-const
-input_24_pad_type_0
-*)
-name!
-
-"
-input_24_pad_type_0*
-val
-
-
-"
-customp
-const
-input_24_pad_0
-
-
-*$
-name
-
-"
-input_24_pad_0*!
-val
-
-
-
-
-
-µ
-const3
-input_26_weight_0
-
-
-
-
-*'
-name
-
-"
-input_26_weight_0*N
-valG
-
-
-
-
-*%
-@model_path/weights/weight.binÄ◊—ç
-const
-input_26_bias_0
-
-
-*%
-name
-
-"
-input_26_bias_0*<
-val5
-
-
-*%
-@model_path/weights/weight.binÄÏ—ß
-conv
-x	
-
-input
-weight
-
-input_26_weight_0
-bias
-
-input_26_bias_0
-strides
-
-
-var_44#
-pad_type
-
-input_24_pad_type_0
-pad
-
-input_24_pad_0
-	dilations
-
-
-var_46
-groups
-
-
-var_31+
-input_26
-
-
-
-Ä
-`*
-name
-
-"
-
-input_26a
-silu
-x
-
-
-input_26)
-var_54
-
-
-
-Ä
-`*
-name
-
-	"
-op_54]
-const
-var_58
-
-
-*
-name
-
-	"
-op_58*
-val
-
-
-
-
-]
-const
-var_60
-
-
-*
-name
-
-	"
-op_60*
-val
-
-
-
-
-l
-const
-input_20_pad_type_0
-*)
-name!
-
-"
-input_20_pad_type_0*
-val
-
-
-"
-customp
-const
-input_20_pad_0
-
-
-*$
-name
-
-"
-input_20_pad_0*!
-val
-
-
-
-
-
-µ
-const3
-input_22_weight_0
-
-
-
-
-*'
-name
-
-"
-input_22_weight_0*N
-valG
-
-
-
-
-*%
-@model_path/weights/weight.bin¿Ì—ç
-const
-input_22_bias_0
-
-
-*%
-name
-
-"
-input_22_bias_0*<
-val5
-
-
-*%
-@model_path/weights/weight.binÄê”®
-conv
-x
-
-
-var_54
-weight
-
-input_22_weight_0
-bias
-
-input_22_bias_0
-strides
-
-
-var_58#
-pad_type
-
-input_20_pad_type_0
-pad
-
-input_20_pad_0
-	dilations
-
-
-var_60
-groups
-
-
-var_31+
-input_22
-
-
-
-Ä
-`*
-name
-
-"
-
-input_22a
-silu
-x
-
-
-input_22)
-var_68
-
-
-
-Ä
-`*
-name
-
-	"
-op_68]
-const
-var_72
-
-
-*
-name
-
-	"
-op_72*
-val
-
-
-
-
-]
-const
-var_74
-
-
-*
-name
-
-	"
-op_74*
-val
-
-
-
-
-l
-const
-input_28_pad_type_0
-*)
-name!
-
-"
-input_28_pad_type_0*
-val
-
-
-"
-customp
-const
-input_28_pad_0
-
-
-*$
-name
-
-"
-input_28_pad_0*!
-val
-
-
-
-
-
-µ
-const3
-input_30_weight_0
-
-0
-
-
-*'
-name
-
-"
-input_30_weight_0*N
-valG
-
-0
-
-
-*%
-@model_path/weights/weight.bin¿ë”ç
-const
-input_30_bias_0
-
-
-0*%
-name
-
-"
-input_30_bias_0*<
-val5
-
-
-0*%
-@model_path/weights/weight.binÄ÷’®
-conv
-x
-
-
-var_68
-weight
-
-input_30_weight_0
-bias
-
-input_30_bias_0
-strides
-
-
-var_72#
-pad_type
-
-input_28_pad_type_0
-pad
-
-input_28_pad_0
-	dilations
-
-
-var_74
-groups
-
-
-var_31+
-input_30
-
-
-0
-Ä
-`*
-name
-
-"
-
-input_30a
-silu
-x
-
-
-input_30)
-var_82
-
-
-0
-Ä
-`*
-name
-
-	"
-op_82]
-const
-var_88
-
-
-*
-name
-
-	"
-op_88*
-val
-
-
-
-
-]
-const
-var_90
-
-
-*
-name
-
-	"
-op_90*
-val
-
-
-
-
-l
-const
-input_32_pad_type_0
-*)
-name!
-
-"
-input_32_pad_type_0*
-val
-
-
-"
-customp
-const
-input_32_pad_0
-
-
-*$
-name
-
-"
-input_32_pad_0*!
-val
-
-
-
-
-
-µ
-const3
-input_34_weight_0
-
-`
-0
-
-*'
-name
-
-"
-input_34_weight_0*N
-valG
-
-`
-0
-
-*%
-@model_path/weights/weight.binÄÿ’ç
-const
-input_34_bias_0
-
-
-`*%
-name
-
-"
-input_34_bias_0*<
-val5
-
-
-`*%
-@model_path/weights/weight.bin¿Ëﬂß
-conv
-x
-
-
-var_82
-weight
-
-input_34_weight_0
-bias
-
-input_34_bias_0
-strides
-
-
-var_88#
-pad_type
-
-input_32_pad_type_0
-pad
-
-input_32_pad_0
-	dilations
-
-
-var_90
-groups
-
-
-var_31*
-input_34
-
-
-`
-@
-0*
-name
-
-"
-
-input_34`
-silu
-x
-
-
-input_34(
-var_98
-
-
-`
-@
-0*
-name
-
-	"
-op_98_
-const
-var_107
-
-
-*
-name
-
-
-"
-op_107*
-val
-
-
-
-
-_
-const
-var_109
-
-
-*
-name
-
-
-"
-op_109*
-val
-
-
-
-
-l
-const
-input_52_pad_type_0
-*)
-name!
-
-"
-input_52_pad_type_0*
-val
-
-
-"
-customp
-const
-input_52_pad_0
-
-
-*$
-name
-
-"
-input_52_pad_0*!
-val
-
-
-
-
-
-    µ
-const3
-input_48_weight_0
-
-0
-`
-
-*'
-name
-
-"
-input_48_weight_0*N
-valG
-
-0
-`
-
-*%
-@model_path/weights/weight.binÄÏﬂç
-const
-input_48_bias_0
-
-
-0*%
-name
-
-"
-input_48_bias_0*<
-val5
-
-
-0*%
-@model_path/weights/weight.bin¿¸‡©
-conv
-x
-
-
-var_98
-weight
-
-input_48_weight_0
-bias
-
-input_48_bias_0
-strides
-	
-var_107#
-pad_type
-
-input_52_pad_type_0
-pad
-
-input_52_pad_0
-	dilations
-	
-var_109
-groups
-
-
-var_31*
-input_48
-
-
-0
-@
-0*
-name
-
-"
-
-input_48b
-silu
-x
-
-
-input_48)
-var_117
-
-
-0
-@
-0*
-name
-
-
-"
-op_117_
-const
-var_121
-
-
-*
-name
-
-
-"
-op_121*
-val
-
-
-
-
-_
-const
-var_123
-
-
-*
-name
-
-
-"
-op_123*
-val
-
-
-
-
-l
-const
-input_54_pad_type_0
-*)
-name!
-
-"
-input_54_pad_type_0*
-val
-
-
-"
-customp
-const
-input_54_pad_0
-
-
-*$
-name
-
-"
-input_54_pad_0*!
-val
-
-
-
-
-
-    µ
-const3
-input_56_weight_0
-
-0
-`
-
-*'
-name
-
-"
-input_56_weight_0*N
-valG
-
-0
-`
-
-*%
-@model_path/weights/weight.bin¿˛‡ç
-const
-input_56_bias_0
-
-
-0*%
-name
-
-"
-input_56_bias_0*<
-val5
-
-
-0*%
-@model_path/weights/weight.binÄè‚©
-conv
-x
-
-
-var_98
-weight
-
-input_56_weight_0
-bias
-
-input_56_bias_0
-strides
-	
-var_121#
-pad_type
-
-input_54_pad_type_0
-pad
-
-input_54_pad_0
-	dilations
-	
-var_123
-groups
-
-
-var_31*
-input_56
-
-
-0
-@
-0*
-name
-
-"
-
-input_56b
-silu
-x
-
-
-input_56)
-var_131
-
-
-0
-@
-0*
-name
-
-
-"
-op_131_
-const
-var_139
-
-
-*
-name
-
-
-"
-op_139*
-val
-
-
-
-
-_
-const
-var_141
-
-
-*
-name
-
-
-"
-op_141*
-val
-
-
-
-
-l
-const
-input_36_pad_type_0
-*)
-name!
-
-"
-input_36_pad_type_0*
-val
-
-
-"
-customp
-const
-input_36_pad_0
-
-
-*$
-name
-
-"
-input_36_pad_0*!
-val
-
-
-
-
-
-µ
-const3
-input_38_weight_0
-
-0
-0
-
-*'
-name
-
-"
-input_38_weight_0*N
-valG
-
-0
-0
-
-*%
-@model_path/weights/weight.binÄë‚ç
-const
-input_38_bias_0
-
-
-0*%
-name
-
-"
-input_38_bias_0*<
-val5
-
-
-0*%
-@model_path/weights/weight.bin¿ôÁ™
-conv
-x
-	
-var_131
-weight
-
-input_38_weight_0
-bias
-
-input_38_bias_0
-strides
-	
-var_139#
-pad_type
-
-input_36_pad_type_0
-pad
-
-input_36_pad_0
-	dilations
-	
-var_141
-groups
-
-
-var_31*
-input_38
-
-
-0
-@
-0*
-name
-
-"
-
-input_38b
-silu
-x
-
-
-input_38)
-var_149
-
-
-0
-@
-0*
-name
-
-
-"
-op_149_
-const
-var_155
-
-
-*
-name
-
-
-"
-op_155*
-val
-
-
-
-
-_
-const
-var_157
-
-
-*
-name
-
-
-"
-op_157*
-val
-
-
-
-
-l
-const
-input_40_pad_type_0
-*)
-name!
-
-"
-input_40_pad_type_0*
-val
-
-
-"
-customp
-const
-input_40_pad_0
-
-
-*$
-name
-
-"
-input_40_pad_0*!
-val
-
-
-
-
-
-µ
-const3
-input_42_weight_0
-
-0
-
-
-*'
-name
-
-"
-input_42_weight_0*N
-valG
-
-0
-
-
-*%
-@model_path/weights/weight.bin¿õÁç
-const
-input_42_bias_0
-
-
-0*%
-name
-
-"
-input_42_bias_0*<
-val5
-
-
-0*%
-@model_path/weights/weight.bin¿¡Á™
-conv
-x
-	
-var_149
-weight
-
-input_42_weight_0
-bias
-
-input_42_bias_0
-strides
-	
-var_155#
-pad_type
-
-input_40_pad_type_0
-pad
-
-input_40_pad_0
-	dilations
-	
-var_157
-groups
-
-
-var_24*
-input_42
-
-
-0
-@
-0*
-name
-
-"
-
-input_42b
-silu
-x
-
-
-input_42)
-var_165
-
-
-0
-@
-0*
-name
-
-
-"
-op_165_
-const
-var_169
-
-
-*
-name
-
-
-"
-op_169*
-val
-
-
-
-
-_
-const
-var_171
-
-
-*
-name
-
-
-"
-op_171*
-val
-
-
-
-
-l
-const
-input_44_pad_type_0
-*)
-name!
-
-"
-input_44_pad_type_0*
-val
-
-
-"
-customp
-const
-input_44_pad_0
-
-
-*$
-name
-
-"
-input_44_pad_0*!
-val
-
-
-
-
-
-    µ
-const3
-input_46_weight_0
-
-0
-0
-
-*'
-name
-
-"
-input_46_weight_0*N
-valG
-
-0
-0
-
-*%
-@model_path/weights/weight.bin¿√Áç
-const
-input_46_bias_0
-
-
-0*%
-name
-
-"
-input_46_bias_0*<
-val5
-
-
-0*%
-@model_path/weights/weight.binÄåË™
-conv
-x
-	
-var_165
-weight
-
-input_46_weight_0
-bias
-
-input_46_bias_0
-strides
-	
-var_169#
-pad_type
-
-input_44_pad_type_0
-pad
-
-input_44_pad_0
-	dilations
-	
-var_171
-groups
-
-
-var_31*
-input_46
-
-
-0
-@
-0*
-name
-
-"
-
-input_46b
-silu
-x
-
-
-input_46)
-var_179
-
-
-0
-@
-0*
-name
-
-
-"
-op_179r
-add
-x
-	
-var_179
-y
-	
-var_131)
-var_180
-
-
-0
-@
-0*
-name
-
-
-"
-op_180_
-const
-var_186
-
-
-*
-name
-
-
-"
-op_186*
-val
-
-
-
-
-_
-const
-var_188
-
-
-*
-name
-
-
-"
-op_188*
-val
-
-
-
-
-l
-const
-input_64_pad_type_0
-*)
-name!
-
-"
-input_64_pad_type_0*
-val
-
-
-"
-customp
-const
-input_64_pad_0
-
-
-*$
-name
-
-"
-input_64_pad_0*!
-val
-
-
-
-
-
-µ
-const3
-input_66_weight_0
-
-0
-0
-
-*'
-name
-
-"
-input_66_weight_0*N
-valG
-
-0
-0
-
-*%
-@model_path/weights/weight.binÄéËç
-const
-input_66_bias_0
-
-
-0*%
-name
-
-"
-input_66_bias_0*<
-val5
-
-
-0*%
-@model_path/weights/weight.bin¿ñÌ™
-conv
-x
-	
-var_180
-weight
-
-input_66_weight_0
-bias
-
-input_66_bias_0
-strides
-	
-var_186#
-pad_type
-
-input_64_pad_type_0
-pad
-
-input_64_pad_0
-	dilations
-	
-var_188
-groups
-
-
-var_31*
-input_66
-
-
-0
-@
-0*
-name
-
-"
-
-input_66b
-silu
-x
-
-
-input_66)
-var_196
-
-
-0
-@
-0*
-name
-
-
-"
-op_196_
-const
-var_202
-
-
-*
-name
-
-
-"
-op_202*
-val
-
-
-
-
-_
-const
-var_204
-
-
-*
-name
-
-
-"
-op_204*
-val
-
-
-
-
-l
-const
-input_68_pad_type_0
-*)
-name!
-
-"
-input_68_pad_type_0*
-val
-
-
-"
-customp
-const
-input_68_pad_0
-
-
-*$
-name
-
-"
-input_68_pad_0*!
-val
-
-
-
-
-
-µ
-const3
-input_70_weight_0
-
-0
-
-
-*'
-name
-
-"
-input_70_weight_0*N
-valG
-
-0
-
-
-*%
-@model_path/weights/weight.bin¿òÌç
-const
-input_70_bias_0
-
-
-0*%
-name
-
-"
-input_70_bias_0*<
-val5
-
-
-0*%
-@model_path/weights/weight.bin¿æÌ™
-conv
-x
-	
-var_196
-weight
-
-input_70_weight_0
-bias
-
-input_70_bias_0
-strides
-	
-var_202#
-pad_type
-
-input_68_pad_type_0
-pad
-
-input_68_pad_0
-	dilations
-	
-var_204
-groups
-
-
-var_24*
-input_70
-
-
-0
-@
-0*
-name
-
-"
-
-input_70b
-silu
-x
-
-
-input_70)
-var_212
-
-
-0
-@
-0*
-name
-
-
-"
-op_212_
-const
-var_216
-
-
-*
-name
-
-
-"
-op_216*
-val
-
-
-
-
-_
-const
-var_218
-
-
-*
-name
-
-
-"
-op_218*
-val
-
-
-
-
-l
-const
-input_60_pad_type_0
-*)
-name!
-
-"
-input_60_pad_type_0*
-val
-
-
-"
-customp
-const
-input_60_pad_0
-
-
-*$
-name
-
-"
-input_60_pad_0*!
-val
-
-
-
-
-
-    µ
-const3
-input_58_weight_0
-
-0
-0
-
-*'
-name
-
-"
-input_58_weight_0*N
-valG
-
-0
-0
-
-*%
-@model_path/weights/weight.bin¿¿Ìç
-const
-input_58_bias_0
-
-
-0*%
-name
-
-"
-input_58_bias_0*<
-val5
-
-
-0*%
-@model_path/weights/weight.binÄâÓ™
-conv
-x
-	
-var_212
-weight
-
-input_58_weight_0
-bias
-
-input_58_bias_0
-strides
-	
-var_216#
-pad_type
-
-input_60_pad_type_0
-pad
-
-input_60_pad_0
-	dilations
-	
-var_218
-groups
-
-
-var_31*
-input_58
-
-
-0
-@
-0*
-name
-
-"
-
-input_58b
-silu
-x
-
-
-input_58)
-var_226
-
-
-0
-@
-0*
-name
-
-
-"
-op_226r
-add
-x
-	
-var_226
-y
-	
-var_180)
-var_227
-
-
-0
-@
-0*
-name
-
-
-"
-op_227k
-const
-input_50_interleave_0
-*+
-name#
-
-"
-input_50_interleave_0*
-val
-
-
- ≥
-concat 
-values
-	
-var_227
-	
-var_117
-axis
-
-
-var_31'
-
-interleave
-
-input_50_interleave_0*
-input_50
-
-
-`
-@
-0*
-name
-
-"
-
-input_50Ç
-const
-input0_3_axes_0
-
-
-*%
-name
-
-"
-input0_3_axes_0*1
-val*
-
-
-
-
-˛ˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇi
-const
-input0_3_keep_dims_0
-**
-name"
-
-"
-input0_3_keep_dims_0*
-val
-
-
-∞
-reduce_mean
-x
-
-
-input_50
-axes
-
-input0_3_axes_0%
-	keep_dims
-
-input0_3_keep_dims_0*
-input0_3
-
-
-`
-
-*
-name
-
-"
-
-input0_3_
-const
-var_235
-
-
-*
-name
-
-
-"
-op_235*
-val
-
-
-
-
-_
-const
-var_237
-
-
-*
-name
-
-
-"
-op_237*
-val
-
-
-
-
-l
-const
-input_62_pad_type_0
-*)
-name!
-
-"
-input_62_pad_type_0*
-val
-
-
-"
-customp
-const
-input_62_pad_0
-
-
-*$
-name
-
-"
-input_62_pad_0*!
-val
-
-
-
-
-
-    ”
-conv
-x
-
-
-input0_33
-weight)
-'
-%backbone_stage1_1_attention_fc_weight/
-bias'
-%
-#backbone_stage1_1_attention_fc_bias
-strides
-	
-var_235#
-pad_type
-
-input_62_pad_type_0
-pad
-
-input_62_pad_0
-	dilations
-	
-var_237
-groups
-
-
-var_31*
-input_62
-
-
-`
-
-*
-name
-
-"
-
-input_62a
-const
-var_240_alpha_0
-*$
-name
-
-"
-op_240_alpha_0*
-val
-
-
-
-
-´™*>_
-const
-var_240_beta_0
-*#
-name
-
-"
-op_240_beta_0*
-val
-
-
-
-
-   ?§
-sigmoid_hard
-x
-
-
-input_62
-alpha
-
-var_240_alpha_0
-beta
-
-var_240_beta_0)
-var_240
-
-
-`
-
-*
-name
-
-
-"
-op_240v
-mul
-x
-
-
-input_50
-y
-	
-var_240*
-input0_5
-
-
-`
-@
-0*
-name
-
-"
-
-input0_5_
-const
-var_245
-
-
-*
-name
-
-
-"
-op_245*
-val
-
-
-
-
-_
-const
-var_247
-
-
-*
-name
-
-
-"
-op_247*
-val
-
-
-
-
-l
-const
-input_72_pad_type_0
-*)
-name!
-
-"
-input_72_pad_type_0*
-val
-
-
-"
-customp
-const
-input_72_pad_0
-
-
-*$
-name
-
-"
-input_72_pad_0*!
-val
-
-
-
-
-
-    µ
-const3
-input_74_weight_0
-
-`
-`
-
-*'
-name
-
-"
-input_74_weight_0*N
-valG
-
-`
-`
-
-*%
-@model_path/weights/weight.binÄãÓç
-const
-input_74_bias_0
-
-
-`*%
-name
-
-"
-input_74_bias_0*<
-val5
-
-
-`*%
-@model_path/weights/weight.bin¿´´
-conv
-x
-
-
-input0_5
-weight
-
-input_74_weight_0
-bias
-
-input_74_bias_0
-strides
-	
-var_245#
-pad_type
-
-input_72_pad_type_0
-pad
-
-input_72_pad_0
-	dilations
-	
-var_247
-groups
-
-
-var_31*
-input_74
-
-
-`
-@
-0*
-name
-
-"
-
-input_74b
-silu
-x
-
-
-input_74)
-var_255
-
-
-`
-@
-0*
-name
-
-
-"
-op_255_
-const
-var_261
-
-
-*
-name
-
-
-"
-op_261*
-val
-
-
-
-
-_
-const
-var_263
-
-
-*
-name
-
-
-"
-op_263*
-val
-
-
-
-
-l
-const
-input_76_pad_type_0
-*)
-name!
-
-"
-input_76_pad_type_0*
-val
-
-
-"
-customp
-const
-input_76_pad_0
-
-
-*$
-name
-
-"
-input_76_pad_0*!
-val
-
-
-
-
-
-∑
-const4
-input_78_weight_0
-
-¿
-`
-
-*'
-name
-
-"
-input_78_weight_0*O
-valH
-
-¿
-`
-
-*%
-@model_path/weights/weight.binÄØè
-const 
-input_78_bias_0
-
-¿*%
-name
-
-"
-input_78_bias_0*=
-val6
-
-¿*%
-@model_path/weights/weight.bin¿Ôò´
-conv
-x
-	
-var_255
-weight
-
-input_78_weight_0
-bias
-
-input_78_bias_0
-strides
-	
-var_261#
-pad_type
-
-input_76_pad_type_0
-pad
-
-input_76_pad_0
-	dilations
-	
-var_263
-groups
-
-
-var_31+
-input_78
-
-
-¿
- 
-*
-name
-
-"
-
-input_78c
-silu
-x
-
-
-input_78*
-var_271
-
-
-¿
- 
-*
-name
-
-
-"
-op_271_
-const
-var_280
-
-
-*
-name
-
-
-"
-op_280*
-val
-
-
-
-
-_
-const
-var_282
-
-
-*
-name
-
-
-"
-op_282*
-val
-
-
-
-
-l
-const
-input_80_pad_type_0
-*)
-name!
-
-"
-input_80_pad_type_0*
-val
-
-
-"
-customp
-const
-input_80_pad_0
-
-
-*$
-name
-
-"
-input_80_pad_0*!
-val
-
-
-
-
-
-    ∑
-const4
-input_82_weight_0
-
-`
-¿
-
-*'
-name
-
-"
-input_82_weight_0*O
-valH
-
-`
-¿
-
-*%
-@model_path/weights/weight.binÄˆòç
-const
-input_82_bias_0
-
-
-`*%
-name
-
-"
-input_82_bias_0*<
-val5
-
-
-`*%
-@model_path/weights/weight.bin¿∂ù™
-conv
-x
-	
-var_271
-weight
-
-input_82_weight_0
-bias
-
-input_82_bias_0
-strides
-	
-var_280#
-pad_type
-
-input_80_pad_type_0
-pad
-
-input_80_pad_0
-	dilations
-	
-var_282
-groups
-
-
-var_31*
-input_82
-
-
-`
- 
-*
-name
-
-"
-
-input_82b
-silu
-x
-
-
-input_82)
-var_290
-
-
-`
- 
-*
-name
-
-
-"
-op_290_
-const
-var_294
-
-
-*
-name
-
-
-"
-op_294*
-val
-
-
-
-
-_
-const
-var_296
-
-
-*
-name
-
-
-"
-op_296*
-val
-
-
-
-
-l
-const
-input_84_pad_type_0
-*)
-name!
-
-"
-input_84_pad_type_0*
-val
-
-
-"
-customp
-const
-input_84_pad_0
-
-
-*$
-name
-
-"
-input_84_pad_0*!
-val
-
-
-
-
-
-    ∑
-const4
-input_86_weight_0
-
-`
-¿
-
-*'
-name
-
-"
-input_86_weight_0*O
-valH
-
-`
-¿
-
-*%
-@model_path/weights/weight.binÄ∫ùç
-const
-input_86_bias_0
-
-
-`*%
-name
-
-"
-input_86_bias_0*<
-val5
-
-
-`*%
-@model_path/weights/weight.bin¿˙°™
-conv
-x
-	
-var_271
-weight
-
-input_86_weight_0
-bias
-
-input_86_bias_0
-strides
-	
-var_294#
-pad_type
-
-input_84_pad_type_0
-pad
-
-input_84_pad_0
-	dilations
-	
-var_296
-groups
-
-
-var_31*
-input_86
-
-
-`
- 
-*
-name
-
-"
-
-input_86b
-silu
-x
-
-
-input_86)
-var_304
-
-
-`
- 
-*
-name
-
-
-"
-op_304_
-const
-var_314
-
-
-*
-name
-
-
-"
-op_314*
-val
-
-
-
-
-_
-const
-var_316
-
-
-*
-name
-
-
-"
-op_316*
-val
-
-
-
-
-l
-const
-input_88_pad_type_0
-*)
-name!
-
-"
-input_88_pad_type_0*
-val
-
-
-"
-customp
-const
-input_88_pad_0
-
-
-*$
-name
-
-"
-input_88_pad_0*!
-val
-
-
-
-
-
-µ
-const3
-input_90_weight_0
-
-`
-`
-
-*'
-name
-
-"
-input_90_weight_0*N
-valG
-
-`
-`
-
-*%
-@model_path/weights/weight.binÄ˛°ç
-const
-input_90_bias_0
-
-
-`*%
-name
-
-"
-input_90_bias_0*<
-val5
-
-
-`*%
-@model_path/weights/weight.bin¿û∂™
-conv
-x
-	
-var_304
-weight
-
-input_90_weight_0
-bias
-
-input_90_bias_0
-strides
-	
-var_314#
-pad_type
-
-input_88_pad_type_0
-pad
-
-input_88_pad_0
-	dilations
-	
-var_316
-groups
-
-
-var_31*
-input_90
-
-
-`
- 
-*
-name
-
-"
-
-input_90b
-silu
-x
-
-
-input_90)
-var_324
-
-
-`
- 
-*
-name
-
-
-"
-op_324_
-const
-var_330
-
-
-*
-name
-
-
-"
-op_330*
-val
-
-
-
-
-_
-const
-var_332
-
-
-*
-name
-
-
-"
-op_332*
-val
-
-
-
-
-l
-const
-input_92_pad_type_0
-*)
-name!
-
-"
-input_92_pad_type_0*
-val
-
-
-"
-customp
-const
-input_92_pad_0
-
-
-*$
-name
-
-"
-input_92_pad_0*!
-val
-
-
-
-
-
-µ
-const3
-input_94_weight_0
-
-`
-
-
-*'
-name
-
-"
-input_94_weight_0*N
-valG
-
-`
-
-
-*%
-@model_path/weights/weight.binÄ¢∂ç
-const
-input_94_bias_0
-
-
-`*%
-name
-
-"
-input_94_bias_0*<
-val5
-
-
-`*%
-@model_path/weights/weight.bin¿Ì∂™
-conv
-x
-	
-var_324
-weight
-
-input_94_weight_0
-bias
-
-input_94_bias_0
-strides
-	
-var_330#
-pad_type
-
-input_92_pad_type_0
-pad
-
-input_92_pad_0
-	dilations
-	
-var_332
-groups
-
-
-var_23*
-input_94
-
-
-`
- 
-*
-name
-
-"
-
-input_94b
-silu
-x
-
-
-input_94)
-var_340
-
-
-`
- 
-*
-name
-
-
-"
-op_340_
-const
-var_344
-
-
-*
-name
-
-
-"
-op_344*
-val
-
-
-
-
-_
-const
-var_346
-
-
-*
-name
-
-
-"
-op_346*
-val
-
-
-
-
-l
-const
-input_96_pad_type_0
-*)
-name!
-
-"
-input_96_pad_type_0*
-val
-
-
-"
-customp
-const
-input_96_pad_0
-
-
-*$
-name
-
-"
-input_96_pad_0*!
-val
-
-
-
-
-
-    µ
-const3
-input_98_weight_0
-
-`
-`
-
-*'
-name
-
-"
-input_98_weight_0*N
-valG
-
-`
-`
-
-*%
-@model_path/weights/weight.binÄÒ∂ç
-const
-input_98_bias_0
-
-
-`*%
-name
-
-"
-input_98_bias_0*<
-val5
-
-
-`*%
-@model_path/weights/weight.bin¿ëπ™
-conv
-x
-	
-var_340
-weight
-
-input_98_weight_0
-bias
-
-input_98_bias_0
-strides
-	
-var_344#
-pad_type
-
-input_96_pad_type_0
-pad
-
-input_96_pad_0
-	dilations
-	
-var_346
-groups
-
-
-var_31*
-input_98
-
-
-`
- 
-*
-name
-
-"
-
-input_98b
-silu
-x
-
-
-input_98)
-var_354
-
-
-`
- 
-*
-name
-
-
-"
-op_354r
-add
-x
-	
-var_354
-y
-	
-var_304)
-var_355
-
-
-`
- 
-*
-name
-
-
-"
-op_355_
-const
-var_361
-
-
-*
-name
-
-
-"
-op_361*
-val
-
-
-
-
-_
-const
-var_363
-
-
-*
-name
-
-
-"
-op_363*
-val
-
-
-
-
-n
-const
-input_100_pad_type_0
-**
-name"
-
-"
-input_100_pad_type_0*
-val
-
-
-"
-customr
-const
-input_100_pad_0
-
-
-*%
-name
-
-"
-input_100_pad_0*!
-val
-
-
-
-
-
-∑
-const4
-input_102_weight_0
-
-`
-`
-
-*(
-name 
-
-"
-input_102_weight_0*N
-valG
-
-`
-`
-
-*%
-@model_path/weights/weight.binÄïπè
-const 
-input_102_bias_0
-
-
-`*&
-name
-
-"
-input_102_bias_0*<
-val5
-
-
-`*%
-@model_path/weights/weight.bin¿µÕ∞
-conv
-x
-	
-var_355 
-weight
-
-input_102_weight_0
-bias
-
-input_102_bias_0
-strides
-	
-var_361$
-pad_type
-
-input_100_pad_type_0
-pad
-
-input_100_pad_0
-	dilations
-	
-var_363
-groups
-
-
-var_31+
-	input_102
-
-
-`
- 
-*
-name
-
-"
-	input_102c
-silu
-x
-
-	input_102)
-var_371
-
-
-`
- 
-*
-name
-
-
-"
-op_371_
-const
-var_377
-
-
-*
-name
-
-
-"
-op_377*
-val
-
-
-
-
-_
-const
-var_379
-
-
-*
-name
-
-
-"
-op_379*
-val
-
-
-
-
-n
-const
-input_104_pad_type_0
-**
-name"
-
-"
-input_104_pad_type_0*
-val
-
-
-"
-customr
-const
-input_104_pad_0
-
-
-*%
-name
-
-"
-input_104_pad_0*!
-val
-
-
-
-
-
-∑
-const4
-input_106_weight_0
-
-`
-
-
-*(
-name 
-
-"
-input_106_weight_0*N
-valG
-
-`
-
-
-*%
-@model_path/weights/weight.binÄπÕè
-const 
-input_106_bias_0
-
-
-`*&
-name
-
-"
-input_106_bias_0*<
-val5
-
-
-`*%
-@model_path/weights/weight.bin¿ÑŒ∞
-conv
-x
-	
-var_371 
-weight
-
-input_106_weight_0
-bias
-
-input_106_bias_0
-strides
-	
-var_377$
-pad_type
-
-input_104_pad_type_0
-pad
-
-input_104_pad_0
-	dilations
-	
-var_379
-groups
-
-
-var_23+
-	input_106
-
-
-`
- 
-*
-name
-
-"
-	input_106c
-silu
-x
-
-	input_106)
-var_387
-
-
-`
- 
-*
-name
-
-
-"
-op_387_
-const
-var_391
-
-
-*
-name
-
-
-"
-op_391*
-val
-
-
-
-
-_
-const
-var_393
-
-
-*
-name
-
-
-"
-op_393*
-val
-
-
-
-
-n
-const
-input_108_pad_type_0
-**
-name"
-
-"
-input_108_pad_type_0*
-val
-
-
-"
-customr
-const
-input_108_pad_0
-
-
-*%
-name
-
-"
-input_108_pad_0*!
-val
-
-
-
-
-
-    ∑
-const4
-input_110_weight_0
-
-`
-`
-
-*(
-name 
-
-"
-input_110_weight_0*N
-valG
-
-`
-`
-
-*%
-@model_path/weights/weight.binÄàŒè
-const 
-input_110_bias_0
-
-
-`*&
-name
-
-"
-input_110_bias_0*<
-val5
-
-
-`*%
-@model_path/weights/weight.bin¿®–∞
-conv
-x
-	
-var_387 
-weight
-
-input_110_weight_0
-bias
-
-input_110_bias_0
-strides
-	
-var_391$
-pad_type
-
-input_108_pad_type_0
-pad
-
-input_108_pad_0
-	dilations
-	
-var_393
-groups
-
-
-var_31+
-	input_110
-
-
-`
- 
-*
-name
-
-"
-	input_110c
-silu
-x
-
-	input_110)
-var_401
-
-
-`
- 
-*
-name
-
-
-"
-op_401r
-add
-x
-	
-var_401
-y
-	
-var_355)
-var_402
-
-
-`
- 
-*
-name
-
-
-"
-op_402_
-const
-var_408
-
-
-*
-name
-
-
-"
-op_408*
-val
-
-
-
-
-_
-const
-var_410
-
-
-*
-name
-
-
-"
-op_410*
-val
-
-
-
-
-n
-const
-input_112_pad_type_0
-**
-name"
-
-"
-input_112_pad_type_0*
-val
-
-
-"
-customr
-const
-input_112_pad_0
-
-
-*%
-name
-
-"
-input_112_pad_0*!
-val
-
-
-
-
-
-∑
-const4
-input_114_weight_0
-
-`
-`
-
-*(
-name 
-
-"
-input_114_weight_0*N
-valG
-
-`
-`
-
-*%
-@model_path/weights/weight.binÄ¨–è
-const 
-input_114_bias_0
-
-
-`*&
-name
-
-"
-input_114_bias_0*<
-val5
-
-
-`*%
-@model_path/weights/weight.bin¿Ã‰∞
-conv
-x
-	
-var_402 
-weight
-
-input_114_weight_0
-bias
-
-input_114_bias_0
-strides
-	
-var_408$
-pad_type
-
-input_112_pad_type_0
-pad
-
-input_112_pad_0
-	dilations
-	
-var_410
-groups
-
-
-var_31+
-	input_114
-
-
-`
- 
-*
-name
-
-"
-	input_114c
-silu
-x
-
-	input_114)
-var_418
-
-
-`
- 
-*
-name
-
-
-"
-op_418_
-const
-var_424
-
-
-*
-name
-
-
-"
-op_424*
-val
-
-
-
-
-_
-const
-var_426
-
-
-*
-name
-
-
-"
-op_426*
-val
-
-
-
-
-n
-const
-input_116_pad_type_0
-**
-name"
-
-"
-input_116_pad_type_0*
-val
-
-
-"
-customr
-const
-input_116_pad_0
-
-
-*%
-name
-
-"
-input_116_pad_0*!
-val
-
-
-
-
-
-∑
-const4
-input_118_weight_0
-
-`
-
-
-*(
-name 
-
-"
-input_118_weight_0*N
-valG
-
-`
-
-
-*%
-@model_path/weights/weight.binÄ–‰è
-const 
-input_118_bias_0
-
-
-`*&
-name
-
-"
-input_118_bias_0*<
-val5
-
-
-`*%
-@model_path/weights/weight.bin¿õÂ∞
-conv
-x
-	
-var_418 
-weight
-
-input_118_weight_0
-bias
-
-input_118_bias_0
-strides
-	
-var_424$
-pad_type
-
-input_116_pad_type_0
-pad
-
-input_116_pad_0
-	dilations
-	
-var_426
-groups
-
-
-var_23+
-	input_118
-
-
-`
- 
-*
-name
-
-"
-	input_118c
-silu
-x
-
-	input_118)
-var_434
-
-
-`
- 
-*
-name
-
-
-"
-op_434_
-const
-var_438
-
-
-*
-name
-
-
-"
-op_438*
-val
-
-
-
-
-_
-const
-var_440
-
-
-*
-name
-
-
-"
-op_440*
-val
-
-
-
-
-n
-const
-input_120_pad_type_0
-**
-name"
-
-"
-input_120_pad_type_0*
-val
-
-
-"
-customr
-const
-input_120_pad_0
-
-
-*%
-name
-
-"
-input_120_pad_0*!
-val
-
-
-
-
-
-    ∑
-const4
-input_122_weight_0
-
-`
-`
-
-*(
-name 
-
-"
-input_122_weight_0*N
-valG
-
-`
-`
-
-*%
-@model_path/weights/weight.binÄüÂè
-const 
-input_122_bias_0
-
-
-`*&
-name
-
-"
-input_122_bias_0*<
-val5
-
-
-`*%
-@model_path/weights/weight.bin¿øÁ∞
-conv
-x
-	
-var_434 
-weight
-
-input_122_weight_0
-bias
-
-input_122_bias_0
-strides
-	
-var_438$
-pad_type
-
-input_120_pad_type_0
-pad
-
-input_120_pad_0
-	dilations
-	
-var_440
-groups
-
-
-var_31+
-	input_122
-
-
-`
- 
-*
-name
-
-"
-	input_122c
-silu
-x
-
-	input_122)
-var_448
-
-
-`
- 
-*
-name
-
-
-"
-op_448r
-add
-x
-	
-var_448
-y
-	
-var_402)
-var_449
-
-
-`
- 
-*
-name
-
-
-"
-op_449_
-const
-var_455
-
-
-*
-name
-
-
-"
-op_455*
-val
-
-
-
-
-_
-const
-var_457
-
-
-*
-name
-
-
-"
-op_457*
-val
-
-
-
-
-n
-const
-input_124_pad_type_0
-**
-name"
-
-"
-input_124_pad_type_0*
-val
-
-
-"
-customr
-const
-input_124_pad_0
-
-
-*%
-name
-
-"
-input_124_pad_0*!
-val
-
-
-
-
-
-∑
-const4
-input_126_weight_0
-
-`
-`
-
-*(
-name 
-
-"
-input_126_weight_0*N
-valG
-
-`
-`
-
-*%
-@model_path/weights/weight.binÄ√Áè
-const 
-input_126_bias_0
-
-
-`*&
-name
-
-"
-input_126_bias_0*<
-val5
-
-
-`*%
-@model_path/weights/weight.bin¿„˚∞
-conv
-x
-	
-var_449 
-weight
-
-input_126_weight_0
-bias
-
-input_126_bias_0
-strides
-	
-var_455$
-pad_type
-
-input_124_pad_type_0
-pad
-
-input_124_pad_0
-	dilations
-	
-var_457
-groups
-
-
-var_31+
-	input_126
-
-
-`
- 
-*
-name
-
-"
-	input_126c
-silu
-x
-
-	input_126)
-var_465
-
-
-`
- 
-*
-name
-
-
-"
-op_465_
-const
-var_471
-
-
-*
-name
-
-
-"
-op_471*
-val
-
-
-
-
-_
-const
-var_473
-
-
-*
-name
-
-
-"
-op_473*
-val
-
-
-
-
-n
-const
-input_128_pad_type_0
-**
-name"
-
-"
-input_128_pad_type_0*
-val
-
-
-"
-customr
-const
-input_128_pad_0
-
-
-*%
-name
-
-"
-input_128_pad_0*!
-val
-
-
-
-
-
-∑
-const4
-input_130_weight_0
-
-`
-
-
-*(
-name 
-
-"
-input_130_weight_0*N
-valG
-
-`
-
-
-*%
-@model_path/weights/weight.binÄÁ˚è
-const 
-input_130_bias_0
-
-
-`*&
-name
-
-"
-input_130_bias_0*<
-val5
-
-
-`*%
-@model_path/weights/weight.bin¿≤¸∞
-conv
-x
-	
-var_465 
-weight
-
-input_130_weight_0
-bias
-
-input_130_bias_0
-strides
-	
-var_471$
-pad_type
-
-input_128_pad_type_0
-pad
-
-input_128_pad_0
-	dilations
-	
-var_473
-groups
-
-
-var_23+
-	input_130
-
-
-`
- 
-*
-name
-
-"
-	input_130c
-silu
-x
-
-	input_130)
-var_481
-
-
-`
- 
-*
-name
-
-
-"
-op_481_
-const
-var_485
-
-
-*
-name
-
-
-"
-op_485*
-val
-
-
-
-
-_
-const
-var_487
-
-
-*
-name
-
-
-"
-op_487*
-val
-
-
-
-
-n
-const
-input_132_pad_type_0
-**
-name"
-
-"
-input_132_pad_type_0*
-val
-
-
-"
-customr
-const
-input_132_pad_0
-
-
-*%
-name
-
-"
-input_132_pad_0*!
-val
-
-
-
-
-
-    ∑
-const4
-input_134_weight_0
-
-`
-`
-
-*(
-name 
-
-"
-input_134_weight_0*N
-valG
-
-`
-`
-
-*%
-@model_path/weights/weight.binÄ∂¸è
-const 
-input_134_bias_0
-
-
-`*&
-name
-
-"
-input_134_bias_0*<
-val5
-
-
-`*%
-@model_path/weights/weight.bin¿÷˛∞
-conv
-x
-	
-var_481 
-weight
-
-input_134_weight_0
-bias
-
-input_134_bias_0
-strides
-	
-var_485$
-pad_type
-
-input_132_pad_type_0
-pad
-
-input_132_pad_0
-	dilations
-	
-var_487
-groups
-
-
-var_31+
-	input_134
-
-
-`
- 
-*
-name
-
-"
-	input_134c
-silu
-x
-
-	input_134)
-var_495
-
-
-`
- 
-*
-name
-
-
-"
-op_495r
-add
-x
-	
-var_495
-y
-	
-var_449)
-var_496
-
-
-`
- 
-*
-name
-
-
-"
-op_496m
-const
-input_136_interleave_0
-*,
-name$
-
-"
-input_136_interleave_0*
-val
-
-
- ∑
-concat 
-values
-	
-var_496
-	
-var_290
-axis
-
-
-var_31(
-
-interleave
-
-input_136_interleave_0,
-	input_136
-
-
-¿
- 
-*
-name
-
-"
-	input_136Ç
-const
-input0_7_axes_0
-
-
-*%
-name
-
-"
-input0_7_axes_0*1
-val*
-
-
-
-
-˛ˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇi
-const
-input0_7_keep_dims_0
-**
-name"
-
-"
-input0_7_keep_dims_0*
-val
-
-
-≤
-reduce_mean
-x
-
-	input_136
-axes
-
-input0_7_axes_0%
-	keep_dims
-
-input0_7_keep_dims_0+
-input0_7
-
-
-¿
-
-*
-name
-
-"
-
-input0_7_
-const
-var_504
-
-
-*
-name
-
-
-"
-op_504*
-val
-
-
-
-
-_
-const
-var_506
-
-
-*
-name
-
-
-"
-op_506*
-val
-
-
-
-
-n
-const
-input_138_pad_type_0
-**
-name"
-
-"
-input_138_pad_type_0*
-val
-
-
-"
-customr
-const
-input_138_pad_0
-
-
-*%
-name
-
-"
-input_138_pad_0*!
-val
-
-
-
-
-
-    ÿ
-conv
-x
-
-
-input0_73
-weight)
-'
-%backbone_stage2_1_attention_fc_weight/
-bias'
-%
-#backbone_stage2_1_attention_fc_bias
-strides
-	
-var_504$
-pad_type
-
-input_138_pad_type_0
-pad
-
-input_138_pad_0
-	dilations
-	
-var_506
-groups
-
-
-var_31,
-	input_138
-
-
-¿
-
-*
-name
-
-"
-	input_138a
-const
-var_509_alpha_0
-*$
-name
-
-"
-op_509_alpha_0*
-val
-
-
-
-
-´™*>_
-const
-var_509_beta_0
-*#
-name
-
-"
-op_509_beta_0*
-val
-
-
-
-
-   ?¶
-sigmoid_hard
-x
-
-	input_138
-alpha
-
-var_509_alpha_0
-beta
-
-var_509_beta_0*
-var_509
-
-
-¿
-
-*
-name
-
-
-"
-op_509x
-mul
-x
-
-	input_136
-y
-	
-var_509+
-input0_9
-
-
-¿
- 
-*
-name
-
-"
-
-input0_9_
-const
-var_514
-
-
-*
-name
-
-
-"
-op_514*
-val
-
-
-
-
-_
-const
-var_516
-
-
-*
-name
-
-
-"
-op_516*
-val
-
-
-
-
-n
-const
-input_140_pad_type_0
-**
-name"
-
-"
-input_140_pad_type_0*
-val
-
-
-"
-customr
-const
-input_140_pad_0
-
-
-*%
-name
-
-"
-input_140_pad_0*!
-val
-
-
-
-
-
-    ª
-const6
-input_142_weight_0 
-
-¿
-¿
-
-*(
-name 
-
-"
-input_142_weight_0*P
-valI 
-
-¿
-¿
-
-*%
-@model_path/weights/weight.binÄ⁄˛ë
-const!
-input_142_bias_0
-
-¿*&
-name
-
-"
-input_142_bias_0*=
-val6
-
-¿*%
-@model_path/weights/weight.bin¿⁄á≤
-conv
-x
-
-
-input0_9 
-weight
-
-input_142_weight_0
-bias
-
-input_142_bias_0
-strides
-	
-var_514$
-pad_type
-
-input_140_pad_type_0
-pad
-
-input_140_pad_0
-	dilations
-	
-var_516
-groups
-
-
-var_31,
-	input_142
-
-
-¿
- 
-*
-name
-
-"
-	input_142d
-silu
-x
-
-	input_142*
-var_524
-
-
-¿
- 
-*
-name
-
-
-"
-op_524_
-const
-var_530
-
-
-*
-name
-
-
-"
-op_530*
-val
-
-
-
-
-_
-const
-var_532
-
-
-*
-name
-
-
-"
-op_532*
-val
-
-
-
-
-n
-const
-input_146_pad_type_0
-**
-name"
-
-"
-input_146_pad_type_0*
-val
-
-
-"
-customr
-const
-input_146_pad_0
-
-
-*%
-name
-
-"
-input_146_pad_0*!
-val
-
-
-
-
-
-ª
-const6
-input_144_weight_0 
-
-Ä
-¿
-
-*(
-name 
-
-"
-input_144_weight_0*P
-valI 
-
-Ä
-¿
-
-*%
-@model_path/weights/weight.binÄ·áë
-const!
-input_144_bias_0
-
-Ä*&
-name
-
-"
-input_144_bias_0*=
-val6
-
-Ä*%
-@model_path/weights/weight.bin¿·©±
-conv
-x
-	
-var_524 
-weight
-
-input_144_weight_0
-bias
-
-input_144_bias_0
-strides
-	
-var_530$
-pad_type
-
-input_146_pad_type_0
-pad
-
-input_146_pad_0
-	dilations
-	
-var_532
-groups
-
-
-var_31,
-	input_144
-
-
-Ä
-
-*
-name
-
-"
-	input_144d
-silu
-x
-
-	input_144*
-var_540
-
-
-Ä
-
-*
-name
-
-
-"
-op_540_
-const
-var_549
-
-
-*
-name
-
-
-"
-op_549*
-val
-
-
-
-
-_
-const
-var_551
-
-
-*
-name
-
-
-"
-op_551*
-val
-
-
-
-
-l
-const
-input_47_pad_type_0
-*)
-name!
-
-"
-input_47_pad_type_0*
-val
-
-
-"
-customp
-const
-input_47_pad_0
-
-
-*$
-name
-
-"
-input_47_pad_0*!
-val
-
-
-
-
-
-    π
-const5
-input_43_weight_0 
-
-¿
-Ä
-
-*'
-name
-
-"
-input_43_weight_0*P
-valI 
-
-¿
-Ä
-
-*%
-@model_path/weights/weight.binÄÓ©è
-const 
-input_43_bias_0
-
-¿*%
-name
-
-"
-input_43_bias_0*=
-val6
-
-¿*%
-@model_path/weights/weight.bin¿Óª´
-conv
-x
-	
-var_540
-weight
-
-input_43_weight_0
-bias
-
-input_43_bias_0
-strides
-	
-var_549#
-pad_type
-
-input_47_pad_type_0
-pad
-
-input_47_pad_0
-	dilations
-	
-var_551
-groups
-
-
-var_31+
-input_43
-
-
-¿
-
-*
-name
-
-"
-
-input_43c
-silu
-x
-
-
-input_43*
-var_559
-
-
-¿
-
-*
-name
-
-
-"
-op_559_
-const
-var_563
-
-
-*
-name
-
-
-"
-op_563*
-val
-
-
-
-
-_
-const
-var_565
-
-
-*
-name
-
-
-"
-op_565*
-val
-
-
-
-
-l
-const
-input_49_pad_type_0
-*)
-name!
-
-"
-input_49_pad_type_0*
-val
-
-
-"
-customp
-const
-input_49_pad_0
-
-
-*$
-name
-
-"
-input_49_pad_0*!
-val
-
-
-
-
-
-    π
-const5
-input_51_weight_0 
-
-¿
-Ä
-
-*'
-name
-
-"
-input_51_weight_0*P
-valI 
-
-¿
-Ä
-
-*%
-@model_path/weights/weight.binÄıªè
-const 
-input_51_bias_0
-
-¿*%
-name
-
-"
-input_51_bias_0*=
-val6
-
-¿*%
-@model_path/weights/weight.bin¿ıÕ´
-conv
-x
-	
-var_540
-weight
-
-input_51_weight_0
-bias
-
-input_51_bias_0
-strides
-	
-var_563#
-pad_type
-
-input_49_pad_type_0
-pad
-
-input_49_pad_0
-	dilations
-	
-var_565
-groups
-
-
-var_31+
-input_51
-
-
-¿
-
-*
-name
-
-"
-
-input_51c
-silu
-x
-
-
-input_51*
-var_573
-
-
-¿
-
-*
-name
-
-
-"
-op_573_
-const
-var_583
-
-
-*
-name
-
-
-"
-op_583*
-val
-
-
-
-
-_
-const
-var_585
-
-
-*
-name
-
-
-"
-op_585*
-val
-
-
-
-
-n
-const
-input_156_pad_type_0
-**
-name"
-
-"
-input_156_pad_type_0*
-val
-
-
-"
-customr
-const
-input_156_pad_0
-
-
-*%
-name
-
-"
-input_156_pad_0*!
-val
-
-
-
-
-
-ª
-const6
-input_158_weight_0 
-
-¿
-¿
-
-*(
-name 
-
-"
-input_158_weight_0*P
-valI 
-
-¿
-¿
-
-*%
-@model_path/weights/weight.binÄ¸Õë
-const!
-input_158_bias_0
-
-¿*&
-name
-
-"
-input_158_bias_0*=
-val6
-
-¿*%
-@model_path/weights/weight.bin¿¸û±
-conv
-x
-	
-var_573 
-weight
-
-input_158_weight_0
-bias
-
-input_158_bias_0
-strides
-	
-var_583$
-pad_type
-
-input_156_pad_type_0
-pad
-
-input_156_pad_0
-	dilations
-	
-var_585
-groups
-
-
-var_31,
-	input_158
-
-
-¿
-
-*
-name
-
-"
-	input_158d
-silu
-x
-
-	input_158*
-var_593
-
-
-¿
-
-*
-name
-
-
-"
-op_593_
-const
-var_599
-
-
-*
-name
-
-
-"
-op_599*
-val
-
-
-
-
-_
-const
-var_601
-
-
-*
-name
-
-
-"
-op_601*
-val
-
-
-
-
-n
-const
-input_160_pad_type_0
-**
-name"
-
-"
-input_160_pad_type_0*
-val
-
-
-"
-customr
-const
-input_160_pad_0
-
-
-*%
-name
-
-"
-input_160_pad_0*!
-val
-
-
-
-
-
-π
-const5
-input_162_weight_0
-
-¿
-
-
-*(
-name 
-
-"
-input_162_weight_0*O
-valH
-
-¿
-
-
-*%
-@model_path/weights/weight.binÄÉüë
-const!
-input_162_bias_0
-
-¿*&
-name
-
-"
-input_162_bias_0*=
-val6
-
-¿*%
-@model_path/weights/weight.bin¿ô†±
-conv
-x
-	
-var_593 
-weight
-
-input_162_weight_0
-bias
-
-input_162_bias_0
-strides
-	
-var_599$
-pad_type
-
-input_160_pad_type_0
-pad
-
-input_160_pad_0
-	dilations
-	
-var_601
-groups
-
-
-var_22,
-	input_162
-
-
-¿
-
-*
-name
-
-"
-	input_162d
-silu
-x
-
-	input_162*
-var_609
-
-
-¿
-
-*
-name
-
-
-"
-op_609_
-const
-var_613
-
-
-*
-name
-
-
-"
-op_613*
-val
-
-
-
-
-_
-const
-var_615
-
-
-*
-name
-
-
-"
-op_615*
-val
-
-
-
-
-n
-const
-input_164_pad_type_0
-**
-name"
-
-"
-input_164_pad_type_0*
-val
-
-
-"
-customr
-const
-input_164_pad_0
-
-
-*%
-name
-
-"
-input_164_pad_0*!
-val
-
-
-
-
-
-    ª
-const6
-input_166_weight_0 
-
-¿
-¿
-
-*(
-name 
-
-"
-input_166_weight_0*P
-valI 
-
-¿
-¿
-
-*%
-@model_path/weights/weight.binÄ††ë
-const!
-input_166_bias_0
-
-¿*&
-name
-
-"
-input_166_bias_0*=
-val6
-
-¿*%
-@model_path/weights/weight.bin¿†©±
-conv
-x
-	
-var_609 
-weight
-
-input_166_weight_0
-bias
-
-input_166_bias_0
-strides
-	
-var_613$
-pad_type
-
-input_164_pad_type_0
-pad
-
-input_164_pad_0
-	dilations
-	
-var_615
-groups
-
-
-var_31,
-	input_166
-
-
-¿
-
-*
-name
-
-"
-	input_166d
-silu
-x
-
-	input_166*
-var_623
-
-
-¿
-
-*
-name
-
-
-"
-op_623s
-add
-x
-	
-var_623
-y
-	
-var_573*
-var_624
-
-
-¿
-
-*
-name
-
-
-"
-op_624_
-const
-var_630
-
-
-*
-name
-
-
-"
-op_630*
-val
-
-
-
-
-_
-const
-var_632
-
-
-*
-name
-
-
-"
-op_632*
-val
-
-
-
-
-n
-const
-input_150_pad_type_0
-**
-name"
-
-"
-input_150_pad_type_0*
-val
-
-
-"
-customr
-const
-input_150_pad_0
-
-
-*%
-name
-
-"
-input_150_pad_0*!
-val
-
-
-
-
-
-ª
-const6
-input_180_weight_0 
-
-¿
-¿
-
-*(
-name 
-
-"
-input_180_weight_0*P
-valI 
-
-¿
-¿
-
-*%
-@model_path/weights/weight.binÄß©ë
-const!
-input_180_bias_0
-
-¿*&
-name
-
-"
-input_180_bias_0*=
-val6
-
-¿*%
-@model_path/weights/weight.bin¿ß˙±
-conv
-x
-	
-var_624 
-weight
-
-input_180_weight_0
-bias
-
-input_180_bias_0
-strides
-	
-var_630$
-pad_type
-
-input_150_pad_type_0
-pad
-
-input_150_pad_0
-	dilations
-	
-var_632
-groups
-
-
-var_31,
-	input_180
-
-
-¿
-
-*
-name
-
-"
-	input_180d
-silu
-x
-
-	input_180*
-var_640
-
-
-¿
-
-*
-name
-
-
-"
-op_640_
-const
-var_646
-
-
-*
-name
-
-
-"
-op_646*
-val
-
-
-
-
-_
-const
-var_648
-
-
-*
-name
-
-
-"
-op_648*
-val
-
-
-
-
-n
-const
-input_148_pad_type_0
-**
-name"
-
-"
-input_148_pad_type_0*
-val
-
-
-"
-customr
-const
-input_148_pad_0
-
-
-*%
-name
-
-"
-input_148_pad_0*!
-val
-
-
-
-
-
-π
-const5
-input_152_weight_0
-
-¿
-
-
-*(
-name 
-
-"
-input_152_weight_0*O
-valH
-
-¿
-
-
-*%
-@model_path/weights/weight.binÄÆ˙ë
-const!
-input_152_bias_0
-
-¿*&
-name
-
-"
-input_152_bias_0*=
-val6
-
-¿*%
-@model_path/weights/weight.bin¿ƒ˚±
-conv
-x
-	
-var_640 
-weight
-
-input_152_weight_0
-bias
-
-input_152_bias_0
-strides
-	
-var_646$
-pad_type
-
-input_148_pad_type_0
-pad
-
-input_148_pad_0
-	dilations
-	
-var_648
-groups
-
-
-var_22,
-	input_152
-
-
-¿
-
-*
-name
-
-"
-	input_152d
-silu
-x
-
-	input_152*
-var_656
-
-
-¿
-
-*
-name
-
-
-"
-op_656_
-const
-var_660
-
-
-*
-name
-
-
-"
-op_660*
-val
-
-
-
-
-_
-const
-var_662
-
-
-*
-name
-
-
-"
-op_662*
-val
-
-
-
-
-n
-const
-input_154_pad_type_0
-**
-name"
-
-"
-input_154_pad_type_0*
-val
-
-
-"
-customr
-const
-input_154_pad_0
-
-
-*%
-name
-
-"
-input_154_pad_0*!
-val
-
-
-
-
-
-    ª
-const6
-input_178_weight_0 
-
-¿
-¿
-
-*(
-name 
-
-"
-input_178_weight_0*P
-valI 
-
-¿
-¿
-
-*%
-@model_path/weights/weight.binÄÀ˚ë
-const!
-input_178_bias_0
-
-¿*&
-name
-
-"
-input_178_bias_0*=
-val6
-
-¿*%
-@model_path/weights/weight.bin¿ÀÑ	±
-conv
-x
-	
-var_656 
-weight
-
-input_178_weight_0
-bias
-
-input_178_bias_0
-strides
-	
-var_660$
-pad_type
-
-input_154_pad_type_0
-pad
-
-input_154_pad_0
-	dilations
-	
-var_662
-groups
-
-
-var_31,
-	input_178
-
-
-¿
-
-*
-name
-
-"
-	input_178d
-silu
-x
-
-	input_178*
-var_670
-
-
-¿
-
-*
-name
-
-
-"
-op_670s
-add
-x
-	
-var_670
-y
-	
-var_624*
-var_671
-
-
-¿
-
-*
-name
-
-
-"
-op_671_
-const
-var_677
-
-
-*
-name
-
-
-"
-op_677*
-val
-
-
-
-
-_
-const
-var_679
-
-
-*
-name
-
-
-"
-op_679*
-val
-
-
-
-
-n
-const
-input_176_pad_type_0
-**
-name"
-
-"
-input_176_pad_type_0*
-val
-
-
-"
-customr
-const
-input_176_pad_0
-
-
-*%
-name
-
-"
-input_176_pad_0*!
-val
-
-
-
-
-
-ª
-const6
-input_182_weight_0 
-
-¿
-¿
-
-*(
-name 
-
-"
-input_182_weight_0*P
-valI 
-
-¿
-¿
-
-*%
-@model_path/weights/weight.binÄ“Ñ	ë
-const!
-input_182_bias_0
-
-¿*&
-name
-
-"
-input_182_bias_0*=
-val6
-
-¿*%
-@model_path/weights/weight.bin¿“’	±
-conv
-x
-	
-var_671 
-weight
-
-input_182_weight_0
-bias
-
-input_182_bias_0
-strides
-	
-var_677$
-pad_type
-
-input_176_pad_type_0
-pad
-
-input_176_pad_0
-	dilations
-	
-var_679
-groups
-
-
-var_31,
-	input_182
-
-
-¿
-
-*
-name
-
-"
-	input_182d
-silu
-x
-
-	input_182*
-var_687
-
-
-¿
-
-*
-name
-
-
-"
-op_687_
-const
-var_693
-
-
-*
-name
-
-
-"
-op_693*
-val
-
-
-
-
-_
-const
-var_695
-
-
-*
-name
-
-
-"
-op_695*
-val
-
-
-
-
-l
-const
-input_35_pad_type_0
-*)
-name!
-
-"
-input_35_pad_type_0*
-val
-
-
-"
-customp
-const
-input_35_pad_0
-
-
-*$
-name
-
-"
-input_35_pad_0*!
-val
-
-
-
-
-
-∑
-const4
-input_37_weight_0
-
-¿
-
-
-*'
-name
-
-"
-input_37_weight_0*O
-valH
-
-¿
-
-
-*%
-@model_path/weights/weight.binÄŸ’	è
-const 
-input_37_bias_0
-
-¿*%
-name
-
-"
-input_37_bias_0*=
-val6
-
-¿*%
-@model_path/weights/weight.bin¿Ô÷	´
-conv
-x
-	
-var_687
-weight
-
-input_37_weight_0
-bias
-
-input_37_bias_0
-strides
-	
-var_693#
-pad_type
-
-input_35_pad_type_0
-pad
-
-input_35_pad_0
-	dilations
-	
-var_695
-groups
-
-
-var_22+
-input_37
-
-
-¿
-
-*
-name
-
-"
-
-input_37c
-silu
-x
-
-
-input_37*
-var_703
-
-
-¿
-
-*
-name
-
-
-"
-op_703_
-const
-var_707
-
-
-*
-name
-
-
-"
-op_707*
-val
-
-
-
-
-_
-const
-var_709
-
-
-*
-name
-
-
-"
-op_709*
-val
-
-
-
-
-l
-const
-input_39_pad_type_0
-*)
-name!
-
-"
-input_39_pad_type_0*
-val
-
-
-"
-customp
-const
-input_39_pad_0
-
-
-*$
-name
-
-"
-input_39_pad_0*!
-val
-
-
-
-
-
-    π
-const5
-input_41_weight_0 
-
-¿
-¿
-
-*'
-name
-
-"
-input_41_weight_0*P
-valI 
-
-¿
-¿
-
-*%
-@model_path/weights/weight.binÄˆ÷	è
-const 
-input_41_bias_0
-
-¿*%
-name
-
-"
-input_41_bias_0*=
-val6
-
-¿*%
-@model_path/weights/weight.bin¿ˆﬂ	´
-conv
-x
-	
-var_703
-weight
-
-input_41_weight_0
-bias
-
-input_41_bias_0
-strides
-	
-var_707#
-pad_type
-
-input_39_pad_type_0
-pad
-
-input_39_pad_0
-	dilations
-	
-var_709
-groups
-
-
-var_31+
-input_41
-
-
-¿
-
-*
-name
-
-"
-
-input_41c
-silu
-x
-
-
-input_41*
-var_717
-
-
-¿
-
-*
-name
-
-
-"
-op_717s
-add
-x
-	
-var_717
-y
-	
-var_671*
-var_718
-
-
-¿
-
-*
-name
-
-
-"
-op_718_
-const
-var_724
-
-
-*
-name
-
-
-"
-op_724*
-val
-
-
-
-
-_
-const
-var_726
-
-
-*
-name
-
-
-"
-op_726*
-val
-
-
-
-
-n
-const
-input_168_pad_type_0
-**
-name"
-
-"
-input_168_pad_type_0*
-val
-
-
-"
-customr
-const
-input_168_pad_0
-
-
-*%
-name
-
-"
-input_168_pad_0*!
-val
-
-
-
-
-
-ª
-const6
-input_170_weight_0 
-
-¿
-¿
-
-*(
-name 
-
-"
-input_170_weight_0*P
-valI 
-
-¿
-¿
-
-*%
-@model_path/weights/weight.binÄ˝ﬂ	ë
-const!
-input_170_bias_0
-
-¿*&
-name
-
-"
-input_170_bias_0*=
-val6
-
-¿*%
-@model_path/weights/weight.bin¿˝∞
-±
-conv
-x
-	
-var_718 
-weight
-
-input_170_weight_0
-bias
-
-input_170_bias_0
-strides
-	
-var_724$
-pad_type
-
-input_168_pad_type_0
-pad
-
-input_168_pad_0
-	dilations
-	
-var_726
-groups
-
-
-var_31,
-	input_170
-
-
-¿
-
-*
-name
-
-"
-	input_170d
-silu
-x
-
-	input_170*
-var_734
-
-
-¿
-
-*
-name
-
-
-"
-op_734_
-const
-var_740
-
-
-*
-name
-
-
-"
-op_740*
-val
-
-
-
-
-_
-const
-var_742
-
-
-*
-name
-
-
-"
-op_742*
-val
-
-
-
-
-n
-const
-input_172_pad_type_0
-**
-name"
-
-"
-input_172_pad_type_0*
-val
-
-
-"
-customr
-const
-input_172_pad_0
-
-
-*%
-name
-
-"
-input_172_pad_0*!
-val
-
-
-
-
-
-π
-const5
-input_174_weight_0
-
-¿
-
-
-*(
-name 
-
-"
-input_174_weight_0*O
-valH
-
-¿
-
-
-*%
-@model_path/weights/weight.binÄÑ±
-ë
-const!
-input_174_bias_0
-
-¿*&
-name
-
-"
-input_174_bias_0*=
-val6
-
-¿*%
-@model_path/weights/weight.bin¿ö≤
-±
-conv
-x
-	
-var_734 
-weight
-
-input_174_weight_0
-bias
-
-input_174_bias_0
-strides
-	
-var_740$
-pad_type
-
-input_172_pad_type_0
-pad
-
-input_172_pad_0
-	dilations
-	
-var_742
-groups
-
-
-var_22,
-	input_174
-
-
-¿
-
-*
-name
-
-"
-	input_174d
-silu
-x
-
-	input_174*
-var_750
-
-
-¿
-
-*
-name
-
-
-"
-op_750_
-const
-var_754
-
-
-*
-name
-
-
-"
-op_754*
-val
-
-
-
-
-_
-const
-var_756
-
-
-*
-name
-
-
-"
-op_756*
-val
-
-
-
-
-l
-const
-input_55_pad_type_0
-*)
-name!
-
-"
-input_55_pad_type_0*
-val
-
-
-"
-customp
-const
-input_55_pad_0
-
-
-*$
-name
-
-"
-input_55_pad_0*!
-val
-
-
-
-
-
-    π
-const5
-input_53_weight_0 
-
-¿
-¿
-
-*'
-name
-
-"
-input_53_weight_0*P
-valI 
-
-¿
-¿
-
-*%
-@model_path/weights/weight.binÄ°≤
-è
-const 
-input_53_bias_0
-
-¿*%
-name
-
-"
-input_53_bias_0*=
-val6
-
-¿*%
-@model_path/weights/weight.bin¿°ª
-´
-conv
-x
-	
-var_750
-weight
-
-input_53_weight_0
-bias
-
-input_53_bias_0
-strides
-	
-var_754#
-pad_type
-
-input_55_pad_type_0
-pad
-
-input_55_pad_0
-	dilations
-	
-var_756
-groups
-
-
-var_31+
-input_53
-
-
-¿
-
-*
-name
-
-"
-
-input_53c
-silu
-x
-
-
-input_53*
-var_764
-
-
-¿
-
-*
-name
-
-
-"
-op_764s
-add
-x
-	
-var_764
-y
-	
-var_718*
-var_765
-
-
-¿
-
-*
-name
-
-
-"
-op_765k
-const
-input_45_interleave_0
-*+
-name#
-
-"
-input_45_interleave_0*
-val
-
-
- ¥
-concat 
-values
-	
-var_765
-	
-var_559
-axis
-
-
-var_31'
-
-interleave
-
-input_45_interleave_0+
-input_45
-
-
-Ä
-
-*
-name
-
-"
-
-input_45Ñ
-const 
-input0_11_axes_0
-
-
-*&
-name
-
-"
-input0_11_axes_0*1
-val*
-
-
-
-
-˛ˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇk
-const
-input0_11_keep_dims_0
-*+
-name#
-
-"
-input0_11_keep_dims_0*
-val
-
-
-µ
-reduce_mean
-x
-
-
-input_45
-axes
-
-input0_11_axes_0&
-	keep_dims
-
-input0_11_keep_dims_0,
-	input0_11
-
-
-Ä
-
-*
-name
-
-"
-	input0_11_
-const
-var_773
-
-
-*
-name
-
-
-"
-op_773*
-val
-
-
-
-
-_
-const
-var_775
-
-
-*
-name
-
-
-"
-op_775*
-val
-
-
-
-
-l
-const
-input_57_pad_type_0
-*)
-name!
-
-"
-input_57_pad_type_0*
-val
-
-
-"
-customp
-const
-input_57_pad_0
-
-
-*$
-name
-
-"
-input_57_pad_0*!
-val
-
-
-
-
-
-    ’
-conv
-x
-
-	input0_113
-weight)
-'
-%backbone_stage3_1_attention_fc_weight/
-bias'
-%
-#backbone_stage3_1_attention_fc_bias
-strides
-	
-var_773#
-pad_type
-
-input_57_pad_type_0
-pad
-
-input_57_pad_0
-	dilations
-	
-var_775
-groups
-
-
-var_31+
-input_57
-
-
-Ä
-
-*
-name
-
-"
-
-input_57a
-const
-var_778_alpha_0
-*$
-name
-
-"
-op_778_alpha_0*
-val
-
-
-
-
-´™*>_
-const
-var_778_beta_0
-*#
-name
-
-"
-op_778_beta_0*
-val
-
-
-
-
-   ?•
-sigmoid_hard
-x
-
-
-input_57
-alpha
-
-var_778_alpha_0
-beta
-
-var_778_beta_0*
-var_778
-
-
-Ä
-
-*
-name
-
-
-"
-op_778y
-mul
-x
-
-
-input_45
-y
-	
-var_778,
-	input0_13
-
-
-Ä
-
-*
-name
-
-"
-	input0_13_
-const
-var_783
-
-
-*
-name
-
-
-"
-op_783*
-val
-
-
-
-
-_
-const
-var_785
-
-
-*
-name
-
-
-"
-op_785*
-val
-
-
-
-
-n
-const
-input_184_pad_type_0
-**
-name"
-
-"
-input_184_pad_type_0*
-val
-
-
-"
-customr
-const
-input_184_pad_0
-
-
-*%
-name
-
-"
-input_184_pad_0*!
-val
-
-
-
-
-
-    ª
-const6
-input_186_weight_0 
-
-Ä
-Ä
-
-*(
-name 
-
-"
-input_186_weight_0*P
-valI 
-
-Ä
-Ä
-
-*%
-@model_path/weights/weight.binÄ®ª
-ë
-const!
-input_186_bias_0
-
-Ä*&
-name
-
-"
-input_186_bias_0*=
-val6
-
-Ä*%
-@model_path/weights/weight.bin¿®ﬂ
-≥
-conv
-x
-
-	input0_13 
-weight
-
-input_186_weight_0
-bias
-
-input_186_bias_0
-strides
-	
-var_783$
-pad_type
-
-input_184_pad_type_0
-pad
-
-input_184_pad_0
-	dilations
-	
-var_785
-groups
-
-
-var_31,
-	input_186
-
-
-Ä
-
-*
-name
-
-"
-	input_186d
-silu
-x
-
-	input_186*
-var_793
-
-
-Ä
-
-*
-name
-
-
-"
-op_793_
-const
-var_800
-
-
-*
-name
-
-
-"
-op_800*
-val
-
-
-
-
-_
-const
-var_802
-
-
-*
-name
-
-
-"
-op_802*
-val
-
-
-
-
-l
-const
-input_10_pad_type_0
-*)
-name!
-
-"
-input_10_pad_type_0*
-val
-
-
-"
-customp
-const
-input_10_pad_0
-
-
-*$
-name
-
-"
-input_10_pad_0*!
-val
-
-
-
-
-
-∑
-const4
-input_8_weight_0 
-
-Ä
-Ä
-
-*&
-name
-
-"
-input_8_weight_0*P
-valI 
-
-Ä
-Ä
-
-*%
-@model_path/weights/weight.binÄµﬂ
-ç
-const
-input_8_bias_0
-
-Ä*$
-name
-
-"
-input_8_bias_0*=
-val6
-
-Ä*%
-@model_path/weights/weight.bin¿µÁß
-conv
-x
-	
-var_793
-weight
-
-input_8_weight_0
-bias
-
-input_8_bias_0
-strides
-	
-var_800#
-pad_type
-
-input_10_pad_type_0
-pad
-
-input_10_pad_0
-	dilations
-	
-var_802
-groups
-
-
-var_31*
-input_8
-
-
-Ä
-
-*
-name
-
-"	
-input_8b
-silu
-x
-	
-input_8*
-var_810
-
-
-Ä
-
-*
-name
-
-
-"
-op_810_
-const
-var_816
-
-
-*
-name
-
-
-"
-op_816*
-val
-
-
-
-
-_
-const
-var_818
-
-
-*
-name
-
-
-"
-op_818*
-val
-
-
-
-
-l
-const
-input_16_pad_type_0
-*)
-name!
-
-"
-input_16_pad_type_0*
-val
-
-
-"
-customp
-const
-input_16_pad_0
-
-
-*$
-name
-
-"
-input_16_pad_0*!
-val
-
-
-
-
-
-    π
-const5
-input_14_weight_0 
-
-Ä
-Ä
-
-*'
-name
-
-"
-input_14_weight_0*P
-valI 
-
-Ä
-Ä
-
-*%
-@model_path/weights/weight.binÄŒÁè
-const 
-input_14_bias_0
-
-Ä*%
-name
-
-"
-input_14_bias_0*=
-val6
-
-Ä*%
-@model_path/weights/weight.bin¿ŒØ´
-conv
-x
-	
-var_810
-weight
-
-input_14_weight_0
-bias
-
-input_14_bias_0
-strides
-	
-var_816#
-pad_type
-
-input_16_pad_type_0
-pad
-
-input_16_pad_0
-	dilations
-	
-var_818
-groups
-
-
-var_31+
-input_14
-
-
-Ä
-
-*
-name
-
-"
-
-input_14c
-silu
-x
-
-
-input_14*
-var_826
-
-
-Ä
-
-*
-name
-
-
-"
-op_826_
-const
-var_827
-
-
-*
-name
-
-
-"
-op_827*
-val
-
-
-
-
-_
-const
-var_828
-
-
-*
-name
-
-
-"
-op_828*
-val
-
-
-
-
-i
-const
-var_831_pad_type_0
-*'
-name
-
-"
-op_831_pad_type_0*
-val
-
-
-"
-customm
-const
-var_831_pad_0
-
-
-*"
-name
-
-"
-op_831_pad_0*!
-val
-
-
-
-
-
-f
-const
-var_831_ceil_mode_0
-*(
-name 
-
-"
-op_831_ceil_mode_0*
-val
-
-
- ˇ
-max_pool
-x
-	
-var_826
-kernel_sizes
-	
-var_827
-strides
-	
-var_828"
-pad_type
-
-var_831_pad_type_0
-pad
-
-var_831_pad_0$
-	ceil_mode
-
-var_831_ceil_mode_0*
-var_831
-
-
-Ä
-
-*
-name
-
-
-"
-op_831_
-const
-var_832
-
-
-*
-name
-
-
-"
-op_832*
-val
-
-
-
-
-		_
-const
-var_833
-
-
-*
-name
-
-
-"
-op_833*
-val
-
-
-
-
-i
-const
-var_836_pad_type_0
-*'
-name
-
-"
-op_836_pad_type_0*
-val
-
-
-"
-customm
-const
-var_836_pad_0
-
-
-*"
-name
-
-"
-op_836_pad_0*!
-val
-
-
-
-
-
-f
-const
-var_836_ceil_mode_0
-*(
-name 
-
-"
-op_836_ceil_mode_0*
-val
-
-
- ˇ
-max_pool
-x
-	
-var_826
-kernel_sizes
-	
-var_832
-strides
-	
-var_833"
-pad_type
-
-var_836_pad_type_0
-pad
-
-var_836_pad_0$
-	ceil_mode
-
-var_836_ceil_mode_0*
-var_836
-
-
-Ä
-
-*
-name
-
-
-"
-op_836_
-const
-var_837
-
-
-*
-name
-
-
-"
-op_837*
-val
-
-
-
-
-_
-const
-var_838
-
-
-*
-name
-
-
-"
-op_838*
-val
-
-
-
-
-i
-const
-var_841_pad_type_0
-*'
-name
-
-"
-op_841_pad_type_0*
-val
-
-
-"
-customm
-const
-var_841_pad_0
-
-
-*"
-name
-
-"
-op_841_pad_0*!
-val
-
-
-
-
-
-f
-const
-var_841_ceil_mode_0
-*(
-name 
-
-"
-op_841_ceil_mode_0*
-val
-
-
- ˇ
-max_pool
-x
-	
-var_826
-kernel_sizes
-	
-var_837
-strides
-	
-var_838"
-pad_type
-
-var_841_pad_type_0
-pad
-
-var_841_pad_0$
-	ceil_mode
-
-var_841_ceil_mode_0*
-var_841
-
-
-Ä
-
-*
-name
-
-
-"
-op_841k
-const
-input_12_interleave_0
-*+
-name#
-
-"
-input_12_interleave_0*
-val
-
-
-  
-concat6
-values,
-	
-var_826
-	
-var_831
-	
-var_836
-	
-var_841
-axis
-
-
-var_31'
-
-interleave
-
-input_12_interleave_0+
-input_12
-
-
-Ä
-
-*
-name
-
-"
-
-input_12_
-const
-var_847
-
-
-*
-name
-
-
-"
-op_847*
-val
-
-
-
-
-_
-const
-var_849
-
-
-*
-name
-
-
-"
-op_849*
-val
-
-
-
-
-l
-const
-input0_4_pad_type_0
-*)
-name!
-
-"
-input0_4_pad_type_0*
-val
-
-
-"
-customp
-const
-input0_4_pad_0
-
-
-*$
-name
-
-"
-input0_4_pad_0*!
-val
-
-
-
-
-
-    π
-const5
-input_18_weight_0 
-
-Ä
-Ä
-
-*'
-name
-
-"
-input_18_weight_0*P
-valI 
-
-Ä
-Ä
-
-*%
-@model_path/weights/weight.binÄ€Øè
-const 
-input_18_bias_0
-
-Ä*%
-name
-
-"
-input_18_bias_0*=
-val6
-
-Ä*%
-@model_path/weights/weight.bin¿€œ¨
-conv
-x
-
-
-input_12
-weight
-
-input_18_weight_0
-bias
-
-input_18_bias_0
-strides
-	
-var_847#
-pad_type
-
-input0_4_pad_type_0
-pad
-
-input0_4_pad_0
-	dilations
-	
-var_849
-groups
-
-
-var_31+
-input_18
-
-
-Ä
-
-*
-name
-
-"
-
-input_18c
-silu
-x
-
-
-input_18*
-var_857
-
-
-Ä
-
-*
-name
-
-
-"
-op_857_
-const
-var_866
-
-
-*
-name
-
-
-"
-op_866*
-val
-
-
-
-
-_
-const
-var_868
-
-
-*
-name
-
-
-"
-op_868*
-val
-
-
-
-
-l
-const
-input_23_pad_type_0
-*)
-name!
-
-"
-input_23_pad_type_0*
-val
-
-
-"
-customp
-const
-input_23_pad_0
-
-
-*$
-name
-
-"
-input_23_pad_0*!
-val
-
-
-
-
-
-    π
-const5
-input_19_weight_0 
-
-Ä
-Ä
-
-*'
-name
-
-"
-input_19_weight_0*P
-valI 
-
-Ä
-Ä
-
-*%
-@model_path/weights/weight.binÄÙœè
-const 
-input_19_bias_0
-
-Ä*%
-name
-
-"
-input_19_bias_0*=
-val6
-
-Ä*%
-@model_path/weights/weight.bin¿Ùó´
-conv
-x
-	
-var_857
-weight
-
-input_19_weight_0
-bias
-
-input_19_bias_0
-strides
-	
-var_866#
-pad_type
-
-input_23_pad_type_0
-pad
-
-input_23_pad_0
-	dilations
-	
-var_868
-groups
-
-
-var_31+
-input_19
-
-
-Ä
-
-*
-name
-
-"
-
-input_19c
-silu
-x
-
-
-input_19*
-var_876
-
-
-Ä
-
-*
-name
-
-
-"
-op_876_
-const
-var_880
-
-
-*
-name
-
-
-"
-op_880*
-val
-
-
-
-
-_
-const
-var_882
-
-
-*
-name
-
-
-"
-op_882*
-val
-
-
-
-
-l
-const
-input_25_pad_type_0
-*)
-name!
-
-"
-input_25_pad_type_0*
-val
-
-
-"
-customp
-const
-input_25_pad_0
-
-
-*$
-name
-
-"
-input_25_pad_0*!
-val
-
-
-
-
-
-    π
-const5
-input_27_weight_0 
-
-Ä
-Ä
-
-*'
-name
-
-"
-input_27_weight_0*P
-valI 
-
-Ä
-Ä
-
-*%
-@model_path/weights/weight.binÄÅòè
-const 
-input_27_bias_0
-
-Ä*%
-name
-
-"
-input_27_bias_0*=
-val6
-
-Ä*%
-@model_path/weights/weight.bin¿Å‡´
-conv
-x
-	
-var_857
-weight
-
-input_27_weight_0
-bias
-
-input_27_bias_0
-strides
-	
-var_880#
-pad_type
-
-input_25_pad_type_0
-pad
-
-input_25_pad_0
-	dilations
-	
-var_882
-groups
-
-
-var_31+
-input_27
-
-
-Ä
-
-*
-name
-
-"
-
-input_27c
-silu
-x
-
-
-input_27*
-var_890
-
-
-Ä
-
-*
-name
-
-
-"
-op_890_
-const
-var_898
-
-
-*
-name
-
-
-"
-op_898*
-val
-
-
-
-
-_
-const
-var_900
-
-
-*
-name
-
-
-"
-op_900*
-val
-
-
-
-
-j
-const
-input_7_pad_type_0
-*(
-name 
-
-"
-input_7_pad_type_0*
-val
-
-
-"
-customn
-const
-input_7_pad_0
-
-
-*#
-name
-
-"
-input_7_pad_0*!
-val
-
-
-
-
-
-∑
-const4
-input_9_weight_0 
-
-Ä
-Ä
-
-*&
-name
-
-"
-input_9_weight_0*P
-valI 
-
-Ä
-Ä
-
-*%
-@model_path/weights/weight.binÄé‡ç
-const
-input_9_bias_0
-
-Ä*$
-name
-
-"
-input_9_bias_0*=
-val6
-
-Ä*%
-@model_path/weights/weight.bin¿é§•
-conv
-x
-	
-var_890
-weight
-
-input_9_weight_0
-bias
-
-input_9_bias_0
-strides
-	
-var_898"
-pad_type
-
-input_7_pad_type_0
-pad
-
-input_7_pad_0
-	dilations
-	
-var_900
-groups
-
-
-var_31*
-input_9
-
-
-Ä
-
-*
-name
-
-"	
-input_9b
-silu
-x
-	
-input_9*
-var_908
-
-
-Ä
-
-*
-name
-
-
-"
-op_908_
-const
-var_914
-
-
-*
-name
-
-
-"
-op_914*
-val
-
-
-
-
-_
-const
-var_916
-
-
-*
-name
-
-
-"
-op_916*
-val
-
-
-
-
-l
-const
-input_11_pad_type_0
-*)
-name!
-
-"
-input_11_pad_type_0*
-val
-
-
-"
-customp
-const
-input_11_pad_0
-
-
-*$
-name
-
-"
-input_11_pad_0*!
-val
-
-
-
-
-
-∑
-const4
-input_13_weight_0
-
-Ä
-
-
-*'
-name
-
-"
-input_13_weight_0*O
-valH
-
-Ä
-
-
-*%
-@model_path/weights/weight.binÄõ§è
-const 
-input_13_bias_0
-
-Ä*%
-name
-
-"
-input_13_bias_0*=
-val6
-
-Ä*%
-@model_path/weights/weight.bin¿«¶´
-conv
-x
-	
-var_908
-weight
-
-input_13_weight_0
-bias
-
-input_13_bias_0
-strides
-	
-var_914#
-pad_type
-
-input_11_pad_type_0
-pad
-
-input_11_pad_0
-	dilations
-	
-var_916
-groups
-
-
-var_21+
-input_13
-
-
-Ä
-
-*
-name
-
-"
-
-input_13c
-silu
-x
-
-
-input_13*
-var_924
-
-
-Ä
-
-*
-name
-
-
-"
-op_924_
-const
-var_928
-
-
-*
-name
-
-
-"
-op_928*
-val
-
-
-
-
-_
-const
-var_930
-
-
-*
-name
-
-
-"
-op_930*
-val
-
-
-
-
-l
-const
-input_15_pad_type_0
-*)
-name!
-
-"
-input_15_pad_type_0*
-val
-
-
-"
-customp
-const
-input_15_pad_0
-
-
-*$
-name
-
-"
-input_15_pad_0*!
-val
-
-
-
-
-
-    π
-const5
-input_17_weight_0 
-
-Ä
-Ä
-
-*'
-name
-
-"
-input_17_weight_0*P
-valI 
-
-Ä
-Ä
-
-*%
-@model_path/weights/weight.binÄ‘¶è
-const 
-input_17_bias_0
-
-Ä*%
-name
-
-"
-input_17_bias_0*=
-val6
-
-Ä*%
-@model_path/weights/weight.bin¿‘ ´
-conv
-x
-	
-var_924
-weight
-
-input_17_weight_0
-bias
-
-input_17_bias_0
-strides
-	
-var_928#
-pad_type
-
-input_15_pad_type_0
-pad
-
-input_15_pad_0
-	dilations
-	
-var_930
-groups
-
-
-var_31+
-input_17
-
-
-Ä
-
-*
-name
-
-"
-
-input_17c
-silu
-x
-
-
-input_17*
-var_938
-
-
-Ä
-
-*
-name
-
-
-"
-op_938_
-const
-var_944
-
-
-*
-name
-
-
-"
-op_944*
-val
-
-
-
-
-_
-const
-var_946
-
-
-*
-name
-
-
-"
-op_946*
-val
-
-
-
-
-j
-const
-input_4_pad_type_0
-*(
-name 
-
-"
-input_4_pad_type_0*
-val
-
-
-"
-customn
-const
-input_4_pad_0
-
-
-*#
-name
-
-"
-input_4_pad_0*!
-val
-
-
-
-
-
-∑
-const4
-input_6_weight_0 
-
-Ä
-Ä
-
-*&
-name
-
-"
-input_6_weight_0*P
-valI 
-
-Ä
-Ä
-
-*%
-@model_path/weights/weight.binÄ· ç
-const
-input_6_bias_0
-
-Ä*$
-name
-
-"
-input_6_bias_0*=
-val6
-
-Ä*%
-@model_path/weights/weight.bin¿·é•
-conv
-x
-	
-var_938
-weight
-
-input_6_weight_0
-bias
-
-input_6_bias_0
-strides
-	
-var_944"
-pad_type
-
-input_4_pad_type_0
-pad
-
-input_4_pad_0
-	dilations
-	
-var_946
-groups
-
-
-var_31*
-input_6
-
-
-Ä
-
-*
-name
-
-"	
-input_6b
-silu
-x
-	
-input_6*
-var_954
-
-
-Ä
-
-*
-name
-
-
-"
-op_954_
-const
-var_960
-
-
-*
-name
-
-
-"
-op_960*
-val
-
-
-
-
-_
-const
-var_962
-
-
-*
-name
-
-
-"
-op_962*
-val
-
-
-
-
-j
-const
-input_3_pad_type_0
-*(
-name 
-
-"
-input_3_pad_type_0*
-val
-
-
-"
-customn
-const
-input_3_pad_0
-
-
-*#
-name
-
-"
-input_3_pad_0*!
-val
-
-
-
-
-
-µ
-const3
-input_5_weight_0
-
-Ä
-
-
-*&
-name
-
-"
-input_5_weight_0*O
-valH
-
-Ä
-
-
-*%
-@model_path/weights/weight.binÄÓéç
-const
-input_5_bias_0
-
-Ä*$
-name
-
-"
-input_5_bias_0*=
-val6
-
-Ä*%
-@model_path/weights/weight.bin¿öë•
-conv
-x
-	
-var_954
-weight
-
-input_5_weight_0
-bias
-
-input_5_bias_0
-strides
-	
-var_960"
-pad_type
-
-input_3_pad_type_0
-pad
-
-input_3_pad_0
-	dilations
-	
-var_962
-groups
-
-
-var_21*
-input_5
-
-
-Ä
-
-*
-name
-
-"	
-input_5b
-silu
-x
-	
-input_5*
-var_970
-
-
-Ä
-
-*
-name
-
-
-"
-op_970_
-const
-var_974
-
-
-*
-name
-
-
-"
-op_974*
-val
-
-
-
-
-_
-const
-var_976
-
-
-*
-name
-
-
-"
-op_976*
-val
-
-
-
-
-l
-const
-input_31_pad_type_0
-*)
-name!
-
-"
-input_31_pad_type_0*
-val
-
-
-"
-customp
-const
-input_31_pad_0
-
-
-*$
-name
-
-"
-input_31_pad_0*!
-val
-
-
-
-
-
-    π
-const5
-input_29_weight_0 
-
-Ä
-Ä
-
-*'
-name
-
-"
-input_29_weight_0*P
-valI 
-
-Ä
-Ä
-
-*%
-@model_path/weights/weight.binÄßëè
-const 
-input_29_bias_0
-
-Ä*%
-name
-
-"
-input_29_bias_0*=
-val6
-
-Ä*%
-@model_path/weights/weight.bin¿ßµ´
-conv
-x
-	
-var_970
-weight
-
-input_29_weight_0
-bias
-
-input_29_bias_0
-strides
-	
-var_974#
-pad_type
-
-input_31_pad_type_0
-pad
-
-input_31_pad_0
-	dilations
-	
-var_976
-groups
-
-
-var_31+
-input_29
-
-
-Ä
-
-*
-name
-
-"
-
-input_29c
-silu
-x
-
-
-input_29*
-var_984
-
-
-Ä
-
-*
-name
-
-
-"
-op_984k
-const
-input_21_interleave_0
-*+
-name#
-
-"
-input_21_interleave_0*
-val
-
-
- ¥
-concat 
-values
-	
-var_984
-	
-var_876
-axis
-
-
-var_31'
-
-interleave
-
-input_21_interleave_0+
-input_21
-
-
-Ä
-
-*
-name
-
-"
-
-input_21Ç
-const
-input0_6_axes_0
-
-
-*%
-name
-
-"
-input0_6_axes_0*1
-val*
-
-
-
-
-˛ˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇˇi
-const
-input0_6_keep_dims_0
-**
-name"
-
-"
-input0_6_keep_dims_0*
-val
-
-
-±
-reduce_mean
-x
-
-
-input_21
-axes
-
-input0_6_axes_0%
-	keep_dims
-
-input0_6_keep_dims_0+
-input0_6
-
-
-Ä
-
-*
-name
-
-"
-
-input0_6_
-const
-var_992
-
-
-*
-name
-
-
-"
-op_992*
-val
-
-
-
-
-_
-const
-var_994
-
-
-*
-name
-
-
-"
-op_994*
-val
-
-
-
-
-l
-const
-input_33_pad_type_0
-*)
-name!
-
-"
-input_33_pad_type_0*
-val
-
-
-"
-customp
-const
-input_33_pad_0
-
-
-*$
-name
-
-"
-input_33_pad_0*!
-val
-
-
-
-
-
-    ‘
-conv
-x
-
-
-input0_63
-weight)
-'
-%backbone_stage4_2_attention_fc_weight/
-bias'
-%
-#backbone_stage4_2_attention_fc_bias
-strides
-	
-var_992#
-pad_type
-
-input_33_pad_type_0
-pad
-
-input_33_pad_0
-	dilations
-	
-var_994
-groups
-
-
-var_31+
-input_33
-
-
-Ä
-
-*
-name
-
-"
-
-input_33a
-const
-var_997_alpha_0
-*$
-name
-
-"
-op_997_alpha_0*
-val
-
-
-
-
-´™*>_
-const
-var_997_beta_0
-*#
-name
-
-"
-op_997_beta_0*
-val
-
-
-
-
-   ?•
-sigmoid_hard
-x
-
-
-input_33
-alpha
-
-var_997_alpha_0
-beta
-
-var_997_beta_0*
-var_997
-
-
-Ä
-
-*
-name
-
-
-"
-op_997w
-mul
-x
-
-
-input_21
-y
-	
-var_997+
-input0_2
-
-
-Ä
-
-*
-name
-
-"
-
-input0_2a
-const
-var_1002
-
-
-*
-name
-
-"	
-op_1002*
-val
-
-
-
-
-a
-const
-var_1004
-
-
-*
-name
-
-"	
-op_1004*
-val
-
-
-
-
-l
-const
-input_65_pad_type_0
-*)
-name!
-
-"
-input_65_pad_type_0*
-val
-
-
-"
-customp
-const
-input_65_pad_0
-
-
-*$
-name
-
-"
-input_65_pad_0*!
-val
-
-
-
-
-
-    π
-const5
-input_61_weight_0 
-
-Ä
-Ä
-
-*'
-name
-
-"
-input_61_weight_0*P
-valI 
-
-Ä
-Ä
-
-*%
-@model_path/weights/weight.binÄ¥µè
-const 
-input_61_bias_0
-
-Ä*%
-name
-
-"
-input_61_bias_0*=
-val6
-
-Ä*%
-@model_path/weights/weight.bin¿¥≈Æ
-conv
-x
-
-
-input0_2
-weight
-
-input_61_weight_0
-bias
-
-input_61_bias_0
-strides
-
-
-var_1002#
-pad_type
-
-input_65_pad_type_0
-pad
-
-input_65_pad_0
-	dilations
-
-
-var_1004
-groups
-
-
-var_31+
-input_61
-
-
-Ä
-
-*
-name
-
-"
-
-input_61e
-silu
-x
-
-
-input_61+
-var_1012
-
-
-Ä
-
-*
-name
-
-"	
-op_1012P
-const
-var_1015
-*
-name
-
-"	
-op_1015*
-val
-
-
-a
-const
-var_1020
-
-
-*
-name
-
-"	
-op_1020*
-val
-
-
-
-
-a
-const
-var_1022
-
-
-*
-name
-
-"	
-op_1022*
-val
-
-
-
-
-l
-const
-input_63_pad_type_0
-*)
-name!
-
-"
-input_63_pad_type_0*
-val
-
-
-"
-customp
-const
-input_63_pad_0
-
-
-*$
-name
-
-"
-input_63_pad_0*!
-val
-
-
-
-
-
-ª
-conv
-x
-
-
-var_1012%
-weight
-
-head_final_layer_weight!
-bias
-
-head_final_layer_bias
-strides
-
-
-var_1020#
-pad_type
-
-input_63_pad_type_0
-pad
-
-input_63_pad_0
-	dilations
-
-
-var_1022
-groups
-
-
-var_1015*
-input_63
-
-
-
-
-*
-name
-
-"
-
-input_63k
-const
-var_1031
-
-
-*
-name
-
-"	
-op_1031*)
-val"
-
-
-
-
-ˇˇˇˇˇˇˇˇˇy
-reshape
-x
-
-
-input_63
-shape
-
-
-var_1031$
-input_59
-
-
-
-0*
-name
-
-"
-
-input_59P
-const
-var_1037
-*
-name
-
-"	
-op_1037*
-val
-
-
-i
-const
-var_1044
-
-
-*
-name
-
-"	
-op_1044*'
-val 
-
-
-
-
-
-ˇˇˇˇˇˇˇˇˇX
-abs
-x
-
-
-input_59!
-abs_0
-
-
-
-0*
-name
-
-	"
-abs_0d
-const
-const_2_promoted
-*&
-name
-
-"
-const_2_promoted*
-val
-
-
-
-
-   @p
-pow
-x	
-
-abs_0
-y
-
-const_2_promoted!
-pow_0
-
-
-
-0*
-name
-
-	"
-pow_0õ
-
-reduce_sum
-x	
-
-pow_0
-axes
-
-
-var_1044
-	keep_dims
-
-
-var_1037(
-reduce_sum_0
-
-
-
-*"
-name
-
-"
-reduce_sum_0X
-const
-
-norm_2_y_0
-* 
-name
-
-"
-
-norm_2_y_0*
-val
-
-
-
-
-   ?s
-pow
-x
-
-reduce_sum_0
-y
-
-
-norm_2_y_0"
-norm_2
-
-
-
-*
-name
-
-
-"
-norm_2S
-const
-var_1046
-*
-name
-
-"	
-op_1046*
-val
-
-
-
-
-:Õ>o
-mul
-x
-
-
-norm_2
-y
-
-
-var_1046$
-input0_8
-
-
-
-*
-name
-
-"
-
-input0_8S
-const
-var_1048
-*
-name
-
-"	
-op_1048*
-val
-
-
-
-
-¨≈'7R
-const
-const_3
-*
-name
-
-"	
-const_3*
-val
-
-
-
-
-ˇˇä
-clip
-x
-
-
-input0_8
-alpha
-
-
-var_1048
-beta
-	
-const_3$
-var_1050
-
-
-
-*
-name
-
-"	
-op_1050u
-real_div
-x
-
-
-input_59
-y
-
-
-var_1050$
-var_1051
-
-
-
-0*
-name
-
-"	
-op_1051t
-mul
-x
-
-
-var_1051
-y
-
-head_mlp_0_g$
-var_1052
-
-
-
-0*
-name
-
-"	
-op_1052è
-const 
-linear_0_bias_0
-
-Ä*%
-name
-
-"
-linear_0_bias_0*=
-val6
-
-Ä*%
-@model_path/weights/weight.binÄÕ≈†
-linear
-x
-
-
-var_1052
-weight
-
-head_mlp_1_weight
-bias
-
-linear_0_bias_0%
-linear_0
-
-
-
-Ä*
-name
-
-"
-
-linear_0P
-const
-var_1059
-*
-name
-
-"	
-op_1059*
-val
-
-
-i
-const
-var_1075
-
-
-*
-name
-
-"	
-op_1075*'
-val 
-
-
-
-
-
-ˇˇˇˇˇˇˇˇˇY
-abs
-x
-
-
-linear_0"
-abs_1
-
-
-
-Ä*
-name
-
-	"
-abs_1d
-const
-const_4_promoted
-*&
-name
-
-"
-const_4_promoted*
-val
-
-
-
-
-   @q
-pow
-x	
-
-abs_1
-y
-
-const_4_promoted"
-pow_1
-
-
-
-Ä*
-name
-
-	"
-pow_1õ
-
-reduce_sum
-x	
-
-pow_1
-axes
-
-
-var_1075
-	keep_dims
-
-
-var_1059(
-reduce_sum_1
-
-
-
-*"
-name
-
-"
-reduce_sum_1X
-const
-
-norm_1_y_0
-* 
-name
-
-"
-
-norm_1_y_0*
-val
-
-
-
-
-   ?s
-pow
-x
-
-reduce_sum_1
-y
-
-
-norm_1_y_0"
-norm_1
-
-
-
-*
-name
-
-
-"
-norm_1S
-const
-var_1077
-*
-name
-
-"	
-op_1077*
-val
-
-
-
-
-  Ä=m
-mul
-x
-
-
-norm_1
-y
-
-
-var_1077#
-input_1
-
-
-
-*
-name
-
-"	
-input_1S
-const
-var_1079
-*
-name
-
-"	
-op_1079*
-val
-
-
-
-
-¨≈'7R
-const
-const_5
-*
-name
-
-"	
-const_5*
-val
-
-
-
-
-ˇˇâ
-clip
-x
-	
-input_1
-alpha
-
-
-var_1079
-beta
-	
-const_5$
-var_1081
-
-
-
-*
-name
-
-"	
-op_1081v
-real_div
-x
-
-
-linear_0
-y
-
-
-var_1081%
-var_1082
-
-
-
-Ä*
-name
-
-"	
-op_1082v
-mul
-x
-
-
-var_1082
-y
-
-head_gau_ln_g%
-var_1083
-
-
-
-Ä*
-name
-
-"	
-op_1083è
-const 
-linear_1_bias_0
-
-Ä	*%
-name
-
-"
-linear_1_bias_0*=
-val6
-
-Ä	*%
-@model_path/weights/weight.bin¿’≈°
-linear
-x
-
-
-var_1083 
-weight
-
-head_gau_uv_weight
-bias
-
-linear_1_bias_0%
-linear_1
-
-
-
-Ä	*
-name
-
-"
-
-linear_1_
-silu
-x
-
-
-linear_1%
-var_1086
-
-
-
-Ä	*
-name
-
-"	
-op_1086e
-const
-var_1087
-
-
-*
-name
-
-"	
-op_1087*#
-val
-
-
-
-
-
-ÄÄÄ^
-const
-var_1088_axis_0
-*$
-name
-
-"
-op_1088_axis_0*
-val
-
-
-Ó
-split
-x
-
-
-var_1086
-split_sizes
-
-
-var_1087
-axis
-
-var_1088_axis_0'
-
-var_1088_0
-
-
-
-Ä'
-
-var_1088_1
-
-
-
-Ä'
-
-var_1088_2
-
-
-
-Ä*
-name
-
-"	
-op_1088n
-const
-var_1092_axes_0
-
-
-*$
-name
-
-"
-op_1092_axes_0*
-val
-
-
-
-
-ã
-expand_dims
-x
-
-
-var_1088_2
-axes
-
-var_1092_axes_0+
-var_1092
-
-
-
-
-Ä*
-name
-
-"	
-op_1092§
-const+
-var_1094
-
-
-
-
-Ä*
-name
-
-"	
-op_1094*O
-valH
-
-
-
-
-Ä*%
-@model_path/weights/weight.binÄ˙≈w
-mul
-x
-
-
-var_1092
-y
-
-
-var_1094+
-var_1096
-
-
-
-
-Ä*
-name
-
-"	
-op_1096{
-add
-x
-
-
-var_1096
-y
-
-head_gau_beta*
-base0_1
-
-
-
-
-Ä*
-name
-
-"	
-base0_1}
-const&
-var_1098_split_sizes_0
-
-
-*+
-name#
-
-"
-op_1098_split_sizes_0*
-val
-
-
-
-
-^
-const
-var_1098_axis_0
-*$
-name
-
-"
-op_1098_axis_0*
-val
-
-
-ﬁ
-split
-x
-	
-base0_1)
-split_sizes
-
-var_1098_split_sizes_0
-axis
-
-var_1098_axis_0-
-
-var_1098_0
-
-
-
-
-Ä-
-
-var_1098_1
-
-
-
-
-Ä*
-name
-
-"	
-op_1098q
-const 
-squeeze_0_axes_0
-
-
-*&
-name
-
-"
-squeeze_0_axes_0*
-val
-
-
-
-
-Ö
-squeeze
-x
-
-
-var_1098_0
-axes
-
-squeeze_0_axes_0&
-	squeeze_0
-
-
-
-Ä*
-name
-
-"
-	squeeze_0q
-const 
-squeeze_1_axes_0
-
-
-*&
-name
-
-"
-squeeze_1_axes_0*
-val
-
-
-
-
-Ö
-squeeze
-x
-
-
-var_1098_1
-axes
-
-squeeze_1_axes_0&
-	squeeze_1
-
-
-
-Ä*
-name
-
-"
-	squeeze_1e
-const
-qk_1_transpose_x_1
-*(
-name 
-
-"
-qk_1_transpose_x_1*
-val
-
-
- e
-const
-qk_1_transpose_y_1
-*(
-name 
-
-"
-qk_1_transpose_y_1*
-val
-
-
-º
-matmul
-x
-
-	squeeze_0
-y
-
-	squeeze_1%
-transpose_x
-
-qk_1_transpose_x_1%
-transpose_y
-
-qk_1_transpose_y_1 
-qk_1
-
-
-
-*
-name
-
-
-"
-qk_1n
-const
-_inversed_input_2_y_0
-*+
-name#
-
-"
-_inversed_input_2_y_0*
-val
-
-
-
-
-Ûµ=å
-mul
-x
-
-qk_1
-y
-
-_inversed_input_2_y_0-
-_inversed_input_2
-
-
-
-*'
-name
-
-"
-_inversed_input_2g
-relu
-x
-
-_inversed_input_2$
-var_1106
-
-
-
-*
-name
-
-"	
-op_1106q
-mul
-x
-
-
-var_1106
-y
-
-
-var_1106$
-kernel_1
-
-
-
-*
-name
-
-"
-
-kernel_1l
-const
-var_1108_transpose_x_0
-*+
-name#
-
-"
-op_1108_transpose_x_0*
-val
-
-
- l
-const
-var_1108_transpose_y_0
-*+
-name#
-
-"
-op_1108_transpose_y_0*
-val
-
-
- Ã
-matmul
-x
-
-
-kernel_1
-y
-
-
-var_1088_1)
-transpose_x
-
-var_1108_transpose_x_0)
-transpose_y
-
-var_1108_transpose_y_0%
-var_1108
-
-
-
-Ä*
-name
-
-"	
-op_1108t
-mul
-x
-
-
-var_1088_0
-y
-
-
-var_1108%
-input0_1
-
-
-
-Ä*
-name
-
-"
-
-input0_1†
-linear
-x
-
-
-input0_1
-weight
-
-head_gau_o_weight
-bias
-
-linear_0_bias_0%
-linear_2
-
-
-
-Ä*
-name
-
-"
-
-linear_2Å
-mul
-x
-
-
-linear_0!
-y
-
-head_gau_res_scale_scale%
-var_1113
-
-
-
-Ä*
-name
-
-"	
-op_1113r
-add
-x
-
-
-var_1113
-y
-
-
-linear_2%
-input1_1
-
-
-
-Ä*
-name
-
-"
-
-input1_1è
-const 
-linear_3_bias_0
-
-Ä*%
-name
-
-"
-linear_3_bias_0*=
-val6
-
-Ä*%
-@model_path/weights/weight.bin¿Ç∆ü
-linear
-x
-
-
-input1_1
-weight
-
-head_cls_x_weight
-bias
-
-linear_3_bias_0$
-simcc_x
-
-
-
-Ä*
-name
-
-"
-
-linear_3è
-const 
-linear_4_bias_0
-
-Ä*%
-name
-
-"
-linear_4_bias_0*=
-val6
-
-Ä*%
-@model_path/weights/weight.binÄè∆ü
-linear
-x
-
-
-input1_1
-weight
-
-head_cls_y_weight
-bias
-
-linear_4_bias_0$
-simcc_y
-
-
-
-Ä*
-name
-
-"
-
-linear_4"È
-	buildInfo€"
-
-
-»"≈
-6
-!
-
-"
-coremltools-version
-	
-"
-7.2
-D
-)
-!
-"
-coremltools-component-torch
-
-"
-	2.0.0+cpu
-E
-(
- 
-"
-coremltools-source-dialect
-
-"
-TorchScript

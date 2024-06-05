@@ -32,7 +32,7 @@
                                     <segue destination="JJQ-ZQ-2Un" kind="show" id="u7i-0k-YkE"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzV-37-hMe">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzV-37-hMe">
                                 <rect key="frame" x="115.66666666666669" y="529" width="162" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="CoreML RTMPose"/>
@@ -40,16 +40,26 @@
                                     <segue destination="vEY-mk-z80" kind="show" id="NYC-af-MnB"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beL-TI-QFR">
+                                <rect key="frame" x="121.66666666666669" y="572" width="150" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ONNX RTMPose"/>
+                                <connections>
+                                    <segue destination="cTj-N7-Pye" kind="show" id="3Mz-ib-Q4f"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ZQY-Hd-GGr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LAz-Ey-TiS"/>
+                            <constraint firstItem="beL-TI-QFR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="W3j-ps-nya"/>
                             <constraint firstItem="VRO-u4-aE7" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Xew-5L-lfl"/>
                             <constraint firstItem="ZQY-Hd-GGr" firstAttribute="top" secondItem="VRO-u4-aE7" secondAttribute="bottom" constant="8" symbolic="YES" id="adm-Px-aFX"/>
                             <constraint firstItem="zzV-37-hMe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eCO-IK-0Ix"/>
                             <constraint firstItem="VRO-u4-aE7" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="hkl-XY-iXK"/>
                             <constraint firstItem="zzV-37-hMe" firstAttribute="top" secondItem="ZQY-Hd-GGr" secondAttribute="bottom" constant="8" symbolic="YES" id="mCH-fB-lN3"/>
+                            <constraint firstItem="beL-TI-QFR" firstAttribute="top" secondItem="zzV-37-hMe" secondAttribute="bottom" constant="8" symbolic="YES" id="zPX-OT-zUS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="j2F-TC-eDp"/>
@@ -61,7 +71,6 @@
         <!--CoreML View Controller-->
         <scene sceneID="nLX-Ft-3bE">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5c5-P7-PyQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="scI-bi-pzX" customClass="CoreMLViewController" customModule="CoreMLTesting" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G7y-oy-sTM">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -86,8 +95,9 @@
                         <outlet property="captureView" destination="glc-lU-SgM" id="ohQ-Ih-g9a"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5c5-P7-PyQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1238.9312977099237" y="-23.239436619718312"/>
+            <point key="canvasLocation" x="1259" y="-331"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UbV-Q1-qrc">
@@ -108,7 +118,6 @@
         <!--View Controller-->
         <scene sceneID="w1b-GM-6XM">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kAs-um-wzV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="JJQ-ZQ-2Un" customClass="ONNXViewController" customModule="CoreMLTesting" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C4J-KI-YgG">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -133,13 +142,13 @@
                         <outlet property="captureView" destination="J8O-2P-pco" id="Os7-3Y-zQB"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kAs-um-wzV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1260" y="706"/>
+            <point key="canvasLocation" x="1981" y="-332"/>
         </scene>
         <!--CoreMLRTM Pose View Controller-->
         <scene sceneID="L4O-Uk-FMK">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XR5-oF-5wd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="vEY-mk-z80" customClass="CoreMLRTMPoseViewController" customModule="CoreMLTesting" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rSK-x7-Nw9">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -164,8 +173,40 @@
                         <outlet property="captureView" destination="n3q-6P-Jfp" id="3Ea-GN-xIh"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XR5-oF-5wd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1279" y="1422"/>
+            <point key="canvasLocation" x="1259" y="410"/>
+        </scene>
+        <!--Pose View Controller-->
+        <scene sceneID="llH-cN-WPS">
+            <objects>
+                <viewController id="cTj-N7-Pye" customClass="ONNXRTMPoseViewController" customModule="CoreMLTesting" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0tl-jH-O9o">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WxV-yi-Pq7">
+                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MCh-yx-bsM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WxV-yi-Pq7" firstAttribute="leading" secondItem="MCh-yx-bsM" secondAttribute="leading" id="4rm-PR-hLD"/>
+                            <constraint firstItem="WxV-yi-Pq7" firstAttribute="trailing" secondItem="MCh-yx-bsM" secondAttribute="trailing" id="Eha-ao-M58"/>
+                            <constraint firstAttribute="bottom" secondItem="WxV-yi-Pq7" secondAttribute="bottom" id="jlJ-04-vCJ"/>
+                            <constraint firstItem="WxV-yi-Pq7" firstAttribute="top" secondItem="MCh-yx-bsM" secondAttribute="top" id="tTR-Kn-Kcr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PeP-24-acR"/>
+                    <connections>
+                        <outlet property="captureView" destination="WxV-yi-Pq7" id="CiP-22-RJO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cKr-bd-jE2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1981" y="410"/>
         </scene>
     </scenes>
     <resources>
